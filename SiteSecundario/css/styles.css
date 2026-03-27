@@ -21,7 +21,7 @@ body {
     width: 100%;
     z-index: 9;
     position: fixed;
-    background-color: #0d1eb813;
+    background-color: #00010e13;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
@@ -271,10 +271,11 @@ a.btn-cor.btn-cor-branco {
 }
 
 .carrinho-interno {
+  top: 85px;
   width: 40%;
   height: 100%;
   margin-left: auto;
-  background-color: #161612;
+  background-image: linear-gradient(rgb(196, 196, 196), rgb(182, 182, 182));
   position: relative;
   color: white;
 }
@@ -283,8 +284,9 @@ a.btn-cor.btn-cor-branco {
   position: absolute;
   top: 0;
   left: -50px;
-  background-color: #161612;
-  color: #9b1402;
+  background-color: #c7c7c7;
+  color: #000000;
+  font-weight: bold;
   width: 50px;
   height: 50px;
   display: flex;

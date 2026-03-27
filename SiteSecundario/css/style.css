@@ -228,7 +228,7 @@ footer{
     z-index: 99;
 }
 .dark{
-    background-color: #000000;
+    background-color: #910f0f;
     color: #f0f0f0;
 }
 .dark h1, .dark h2,.dark h3,.dark p{
@@ -269,11 +269,12 @@ footer{
 }
 
 .dark .carrinho-interno{
-    background-color: #a7a7a7;
+    background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0));
 }
 
 .dark .fechar{
-    background-color: #a7a7a7;
+    color: white;
+    background-color: #000000;
 }
 
 .dark .carrinho-interno .card{

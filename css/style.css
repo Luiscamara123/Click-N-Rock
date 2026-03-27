@@ -98,7 +98,7 @@ header{
     display: block;
 }
 .nav-link{
-    color: rgb(255, 255, 255);
+    color: rgb(175, 175, 175);
     font-weight: bold;
     font-family: "Andika", sans-serif;
 }
@@ -237,6 +237,11 @@ footer{
 .dark section h2{
     color: #ffffff;
 }
+.dark .nav-link{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: "Andika", sans-serif;
+}
 .dark h1, .dark h2,.dark h3,.dark p{
     color: #b0b0b0;
 }
@@ -271,7 +276,7 @@ footer{
 }
 
 .dark .carrinho-interno{
-    background-color: #a7a7a7;
+    background-color: #ffffff;
 }
 
 .dark .fechar{
@@ -279,7 +284,7 @@ footer{
 }
 
 .dark .carrinho-interno .card{
-    background-color: #cdcdcd !important;
+    background-color: #bd1818 !important;
 }
 
 .dark .carrinho-lateral{
