@@ -10,7 +10,7 @@
 
 }
 body{
-    background-color:  rgb(10, 16, 13);
+    background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0))
 }
 h1{
     color: rgb(214, 213, 201);
@@ -26,22 +26,31 @@ div#navbarNav {
     flex-grow: unset;
 }
 .navbar{
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    background-color: #0d1eb813;
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
 }
+div#carouselBanner {
+    padding-top: 90px;
+}
+
 input#pesquisa{
-    width: 300px;
+    width: 650px;
     height: 40px;
     border-radius: 5px;
     color: #0e0c0c !important;
-    background-color: #d6d5c9;
-    border: none;
+    background-color: rgba(255, 255, 255, 0.801);
+    border: 2px solid white;
     padding: 0 10px;
-    background-image: url('img/search.png');
+    background-image: url('../imgPrincipal/search.png');
     background-repeat: no-repeat;
-    background-position: 97%;
-    background-size: 20px; 
-    padding-right: 30px; 
+    background-position: 1%;
+    background-size: 30px; 
+    padding-left: 45px; 
 }
 header{
     margin-bottom: 0 auto;
@@ -61,7 +70,7 @@ header{
     background-color:  rgb(10, 16, 13);
 }
 .nav-item{
-    background-color: rgb(214, 213, 201);
+    background-color: transparent;
     border-radius: 5px;
     margin: 5px;
 }
@@ -69,15 +78,23 @@ header{
     display: block;
 }
 .nav-link{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-family: "Andika", sans-serif;
 }
 .nav-link:hover{
-    color: rgb(162, 44, 41);
+    color: rgb(250, 11, 7);
+    border-bottom: 2px solid;
 }
 a.nav-link.active{
-    color:  rgb(144, 41, 35) !important;
+    color:  rgb(243, 13, 1) !important;
+    font-size: 17px;
+    border-bottom: 2px solid;
+}
+a.nav-link.active:hover{
+    color:  rgb(255, 255, 255) !important;
+    font-size: 20px;
+    border-bottom: 2px solid;
 }
 footer{
     width: 100%;
@@ -88,7 +105,7 @@ footer{
     text-decoration: none;
 }
 #footer_content{
-    background-color: #171717;
+    background-color: #040025;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;

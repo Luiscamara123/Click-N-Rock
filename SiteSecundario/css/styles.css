@@ -7,6 +7,19 @@ body {
   padding: 0;
 }
 
+.navbar{
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    background-color: #000000 ;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+}
+div#carouselBanner {
+    padding-top: 90px;
+}
+
 /* Container Principal */
 .container {
   max-width: 1200px;

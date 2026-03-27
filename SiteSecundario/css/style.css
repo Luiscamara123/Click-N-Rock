@@ -74,10 +74,10 @@ header{
     font-family: "Andika", sans-serif;
 }
 .nav-link:hover{
-    color: rgb(162, 44, 41);
+    color: rgb(255, 4, 0);
 }
 a.nav-link.active{
-    color:  rgb(144, 41, 35) !important;
+    color:  rgb(3, 168, 233) !important;
 }
 footer{
     width: 100%;
