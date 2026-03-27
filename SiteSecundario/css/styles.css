@@ -297,17 +297,20 @@ a.btn-cor.btn-cor-branco {
 }
 
 .comprar{
-  background-color: #770000;
+  background-color: #00990d;
+  color: white;
   margin-left: 10px;
   width: 190px;
   border-radius: 10px;
 }
 
-.carrinho-interno .card{
-  background-color: rgb(79, 79, 79) !important;
-  color: #ffffff;
-  padding: 20px;
+.carrinho-interno .card {
+    background-color: transparent !important;
+    color: #ffffff;
+    padding: 20px;
+    border: none !important;
 }
+
 .carrinho-interno .card h3{
   color: #f00404;
 }

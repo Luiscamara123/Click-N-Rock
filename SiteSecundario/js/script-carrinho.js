@@ -30,11 +30,13 @@ function mostrarCarrinho() {
         card.innerHTML = `
             <div>
                 <img src= "${imgAtual}">
+                <div>
                 <h3>${produto.nomeProduto}</h3>
                 <hr>
                 <p>Preço Unitário: ${produto.precoProduto.toFixed(2)}</p>
                 <p>Quantidade: <span>${produto.qtdProduto}</span></p>
                 <p>Total: ${valorTotal.toFixed(2).replace('.', ',')}</p>
+                </div>
             </div>`;
         carrinhoInterno.appendChild(card);
 
