@@ -385,6 +385,7 @@ footer{
     }
     .navbar-toggler{
         margin: 10px;
+        background-color: rgba(180, 180, 180, 0.562);
     }
     div#carouselBanner {
     padding-top: 190px;
