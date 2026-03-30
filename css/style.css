@@ -386,6 +386,9 @@ footer{
     .navbar-toggler{
         margin: 10px;
     }
+    div#carouselBanner {
+    padding-top: 190px;
+}
 }
 
 @media screen and (max-width: 426px) {
