@@ -332,7 +332,9 @@ a.btn-cor.btn-cor-branco {
     gap: 40px;
     flex-direction: column;
   }
-  
+  nav.navbar.navbar-expand-lg.px-3 a {
+    width: 18%;
+  }
   .carrinho-interno{
     width: 60%;
   }
