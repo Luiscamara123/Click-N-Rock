@@ -189,6 +189,11 @@ h2{
 .dark .add-to-cart:hover {
   background-color: #388a3c;
 }
+
+.dark .carrinho-interno .card h3 {
+    color: #000000;
+}
+
 /* Especificações do Produto */
 .product-specs {
   margin-top: 40px;
@@ -272,10 +277,10 @@ a.btn-cor.btn-cor-branco {
 
 .carrinho-interno {
   top: 85px;
-  width: 40%;
+  width: 600px;
   height: 100%;
   margin-left: auto;
-  background-image: linear-gradient(rgb(196, 196, 196), rgb(182, 182, 182));
+  background-image: linear-gradient(rgb(216, 216, 216), rgb(192, 192, 192), rgb(0, 0, 0));
   position: relative;
   color: white;
 }
@@ -296,12 +301,18 @@ a.btn-cor.btn-cor-branco {
   border: none;
 }
 
-.comprar{
+.comprar {
   background-color: #00990d;
+  padding: 15px;
   color: white;
-  margin-left: 10px;
-  width: 190px;
+  width: 250px;
   border-radius: 10px;
+  margin-left: 25px;
+  border: none;
+}
+
+.comprar:hover{
+  background-color: #015c08;
 }
 
 .carrinho-interno .card {
@@ -311,8 +322,8 @@ a.btn-cor.btn-cor-branco {
     border: none !important;
 }
 
-.carrinho-interno .card h3{
-  color: #f00404;
+.carrinho-interno .card h3 {
+    color: #616161;
 }
 
 @media screen and (max-width: 768px) {

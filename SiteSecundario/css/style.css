@@ -269,16 +269,13 @@ footer{
 }
 
 .dark .carrinho-interno{
-    background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0));
+    width: 600px;
+    background-image: linear-gradient(rgb(36, 36, 36), rgb(1, 2, 73), rgb(0, 0, 0));
 }
 
 .dark .fechar{
     color: white;
     background-color: #000000;
-}
-
-.dark .carrinho-interno .card{
-    background-color: #cdcdcd !important;
 }
 
 .dark .carrinho-lateral{
@@ -347,7 +344,8 @@ footer{
     width: 100%;
 }
 .card img {
-    height: 150px;
+    border-radius: 20px;
+    height: 200px;
     object-fit: contain;
     margin-top: 0;
 }
@@ -374,6 +372,11 @@ footer{
     display: block;
 }
 .card div:first-child {
+    background-color: #ffffff;
+    color: #7c7c7c;
+    width: 560px;
+    padding: 20px;
+    border-radius: 20px;
     display: flex;
     gap: 15px;
     align-items: flex-start;
