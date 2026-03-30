@@ -332,10 +332,17 @@ a.btn-cor.btn-cor-branco {
     gap: 40px;
     flex-direction: column;
   }
+  
   .carrinho-interno{
     width: 60%;
   }
   .product-gallery img{
     margin-top: 100px;
+  }
+  .comprar{
+    padding: 10px;
+    width: 150px;
+    margin-top: 200px;
+
   }
 }
