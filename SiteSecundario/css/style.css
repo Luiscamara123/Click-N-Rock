@@ -252,8 +252,8 @@ footer{
     padding: 1.5rem;
     font-weight: 100;
 }
-.dark .navbar-toggler{
-    background-color: #d40000;
+.dark .navbar-toggler {
+    background-color: #dddcdc29;
 }
 .dark #input_group{
     background-color: #c2c2c2;
