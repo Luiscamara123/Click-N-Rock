@@ -61,7 +61,7 @@ input#pesquisa{
     color: #0e0c0c !important;
     background-color: rgba(255, 255, 255, 0.801);
     border: 2px solid white;
-    padding: 0 10px;
+    padding: 0 1px;
     background-image: url('../imgSecundaria/search.png');
     background-repeat: no-repeat;
     background-position: 1%;
@@ -434,4 +434,8 @@ footer{
     #modoescuro {
         margin: 10px;
     }
+    .logo {
+    width: 60px;
+    margin-left: 0px;
+}
 }
