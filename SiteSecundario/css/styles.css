@@ -268,7 +268,7 @@ a.btn-cor.btn-cor-branco {
 .carrinho-lateral {
   display: none;
   width: 100%;
-  position: absolute;
+  position: fixed;
   height: 100%;
   top: 0;
   right: 0;
@@ -333,10 +333,11 @@ a.btn-cor.btn-cor-branco {
     flex-direction: column;
   }
   nav.navbar.navbar-expand-lg.px-3 a {
-    width: 18%;
+    width: 20%;
   }
   .carrinho-interno{
     width: 60%;
+    margin-top: 50px;
   }
   .product-gallery img{
     margin-top: 100px;
