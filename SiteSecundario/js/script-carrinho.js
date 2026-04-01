@@ -49,6 +49,7 @@ function mostrarCarrinho() {
                     <p class="produto-comprado alert alert-warning">Comprou ${produto.qtdProduto} unidades de ${produto.nomeProduto} por R$${valorTotal}</p>
                 </div>`;
                 carrinhoInterno.appendChild(botaoFechar);
+                carrinhoInterno.card.innerHTML = '';
             }
         });
     }
