@@ -42,7 +42,12 @@ function mostrarCarrinho() {
 
         carrinhoInterno.addEventListener('click', (e) => {
             if (e.target.classList.contains('comprar')){
-                carrinhoInterno.innerHTML = `Compra realizada com sucesso!<br>Comprou ${produto.qtdProduto} unidades de ${produto.nomeProduto} por R$${valorTotal}.`;
+                carrinhoInterno.innerHTML = `
+                <div class="sucesso">
+                    <img src="./imgSecundaria/mark.png">
+                    <p class="compra-realizada">Compra realizada com sucesso!</p>
+                    <p class="produto-comprado alert alert-warning">Comprou ${produto.qtdProduto} unidades de ${produto.nomeProduto} por R$${valorTotal}</p>
+                </div>`;
                 carrinhoInterno.appendChild(botaoFechar);
             }
         });

@@ -191,7 +191,7 @@ h2{
 }
 
 .dark .carrinho-interno .card h3 {
-    color: #000000;
+    color: #ffffff;
 }
 
 /* Especificações do Produto */
@@ -276,20 +276,24 @@ a.btn-cor.btn-cor-branco {
 }
 
 .carrinho-interno {
-  top: 85px;
-  width: 600px;
-  height: 100%;
+  top: 200px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 800px;
+  border-radius: 10px;
+  height: auto;
   margin-left: auto;
-  background-image: linear-gradient(rgb(216, 216, 216), rgb(192, 192, 192), rgb(0, 0, 0));
+  background-image: linear-gradient(rgb(255 255 255), rgb(255 255 255), rgb(255 255 255));
   position: relative;
   color: white;
 }
 
 .fechar {
+  font-size: 25px;
   position: absolute;
   top: 0;
-  left: -50px;
-  background-color: #c7c7c7;
+  left: 0;
+  background-color: transparent;
   color: #000000;
   font-weight: bold;
   width: 50px;
@@ -326,6 +330,36 @@ a.btn-cor.btn-cor-branco {
     color: #616161;
 }
 
+.carrinho-interno .sucesso {
+  border-color: #0fce45 !important;
+  border-radius: 20px;
+  border-width: 5px !important;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sucesso img{
+  text-align: center;
+  width: 110px;
+  padding: 15px;
+}
+
+.carrinho-interno .compra-realizada{
+  color: rgba(0, 92, 135);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.carrinho-interno .produto-comprado{
+  text-align: center;
+  border-radius: 3px;
+  color: rgba(205, 172, 134);
+}
+
 @media screen and (max-width: 768px) {
   .product-details {
     display: flex;
@@ -335,16 +369,51 @@ a.btn-cor.btn-cor-branco {
   nav.navbar.navbar-expand-lg.px-3 a {
     width: 20%;
   }
-  .carrinho-interno{
-    width: 60%;
+  .carrinho-interno {
+    margin: auto;
+    width: 80%;
     margin-top: 50px;
-  }
+    height: auto;
+    }
   .product-gallery img{
     margin-top: 100px;
   }
-  .comprar{
-    padding: 10px;
-    width: 150px;
-    margin-top: 175px;
+  .comprar {
+    background-color: #00990d;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+  .fechar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    color: #000000;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
   }
+  .carrinho-interno .card {
+    background-color: transparent !important;
+    color: #ffffff;
+    padding: 0px;
+    border: none !important;
+  }
+  .card img {
+    border-radius: 20px;
+    height: 200px;
+    object-fit: contain;
+    margin-top: 0;
+  }
+  .card div {
+    height: 100%;
+    width: 100%;
+}
+
 }
