@@ -34,7 +34,7 @@ div#navbarNav {
     width: 100%;
     z-index: 9;
     position: fixed;
-    background-color: #7575751c;
+    background-color: #5f5f5f3d;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
@@ -130,6 +130,11 @@ header{
     width: 75px;
     margin-left: 30px;
 }
+.dark .logo{
+    width: 75px;
+    margin-left: 30px;
+    filter: invert(1);
+}
 .navbar.bg-custom{
     width: 80%;
     margin: 0 auto;
@@ -162,6 +167,24 @@ a.nav-link.active{
     border-bottom: 2px solid;
 }
 a.nav-link.active:hover{
+    color:  rgb(255, 255, 255) !important;
+    font-size: 20px;
+    border-bottom: 2px solid;
+}
+.dark .nav-link{
+    color: rgb(175, 175, 175);
+    font-weight: bold;
+    font-family: "Andika", sans-serif;
+}
+.dark .nav-link:hover{
+    border-bottom: 2px solid white;
+}
+.dark a.nav-link.active{
+    color: #00fffb !important;
+    font-size: 17px;
+    border-bottom: 2px solid;
+}
+.dark a.nav-link.active:hover{
     color:  rgb(255, 255, 255) !important;
     font-size: 20px;
     border-bottom: 2px solid;
@@ -225,6 +248,9 @@ footer{
 .footer-list .footer-link {
     color: #a8a29e;
     transition: all 0.4s;
+}
+.dark .footer-list .footer-link:hover{
+    color: #00fffc8f;
 }
 .footer-list .footer-link:hover{
     color:  rgb(162, 44, 41);
@@ -312,8 +338,11 @@ footer{
 .dark #input_group{
     background-color: #c2c2c2;
 }
-.dark .price{
+.price{
     color:  rgb(162, 44, 41);
+}
+.dark .price{
+    color:  rgb(0, 219, 226);
 }
 .dark .rating{
     color: #81c784;
