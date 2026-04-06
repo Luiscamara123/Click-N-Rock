@@ -50,6 +50,60 @@ div#navbarNav {
     display: flex;
     justify-content: space-around;
 }
+
+.dropdown {
+  position: relative;
+}
+
+/*USER ICON*/
+/* Style the dropdown button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Dropdown img */
+.dropbtn img{
+    border-radius: 100%;
+}
+
+/* Links inside dropdown content */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change background color of dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+/*------------------*/
+
 div#carouselBanner {
     padding-top: 90px;
 }
@@ -401,10 +455,19 @@ footer{
     justify-content: flex-start;
 }
 
-
-
-
 @media screen and (max-width: 768px) {
+    .card div:first-child {
+    background-color: #ffffff;
+    color: #7c7c7c;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+}
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -456,7 +519,7 @@ footer{
         margin: 10px;
     }
     .logo {
-    width: 60px;
-    margin-left: 0px;
-}
+        width: 60px;
+        margin-left: 0px;
+    }
 }

@@ -54,6 +54,69 @@ div#navbarNav {
     display: flex;
     justify-content: space-around;
 }
+
+[data-bs-theme="dark"] .dark .navbar img {
+  filter: invert(1);
+}
+
+/*--------------------USER ICON-----------------------*/
+.dropdown {
+  position: relative;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Dropdown img */
+.dropbtn img{
+    border-radius: 100%;
+}
+
+/* Links inside dropdown content */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change background color of dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+[data-bs-theme="dark"] .dark .dropbtn img {
+  filter: invert(1);
+}
+
+/*------------------*/
+
 div#carouselBanner {
     padding-top: 90px;
 }
@@ -302,11 +365,14 @@ footer{
     border-radius: 15px !important;
     border: 2px solid black !important;
 }
+.dark .carousel-control-next, .dark  .carousel-control-prev {
+    filter: none;
+}
 .carousel-control-next-icon{
-    background-image: url(./next.png) ;
+    /*background-image: url(./next.png) ;*/
 }
 .carousel-control-prev-icon{
-    background-image: url(./back.png);
+    /*background-image: url(./back.png);*/
 }
 .produto{
     display: flex;
