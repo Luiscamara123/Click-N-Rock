@@ -13,7 +13,7 @@ body.dark{
     background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0));
 }
 .container-custom{
-   max-width: 430px;
+   max-width: 550px;
    width: 100%;
    background: #fff;
    border-radius: 7px;
