@@ -44,7 +44,7 @@ div#navbarNav {
     display: flex;
     justify-content: space-around;
 }
-.dark .navbar{
+.dark .navbar, .navbar{
     top: 0;
     width: 100%;
     z-index: 9;
@@ -55,7 +55,7 @@ div#navbarNav {
     justify-content: space-around;
 }
 
-[data-bs-theme="dark"] .dark .navbar img {
+.dark .navbar img {
   filter: invert(1);
 }
 
