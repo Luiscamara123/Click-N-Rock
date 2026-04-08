@@ -551,4 +551,8 @@ footer{
         width: 60px;
         margin-left: 0px;
     }
+    .dark .logo {
+        width: 50px;
+        margin-left: 0;
+    }
 }
