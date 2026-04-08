@@ -14,7 +14,7 @@ body{
     background-image: linear-gradient(rgb(255 255 255), rgb(175, 175, 175));
 }
 body.dark{
-    background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0));
+    background-image: linear-gradient(black, rgb(1, 1, 37), rgb(0, 0, 0));
 }
 h1{
     color: rgb(214, 213, 201);
