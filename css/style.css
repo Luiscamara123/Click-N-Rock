@@ -454,6 +454,24 @@ footer{
 .button-card:hover{
     opacity: 0.7;
 }
+
+.ajuste-carrinho {
+    display: flex;
+    align-items: center;
+    height: 40px !important;
+    gap: 15px;
+}
+
+button.button-card {
+    margin-top: 0;
+}
+
+a.carrinho-card img {
+    width: 25px;
+    height: auto;
+    margin: 0 !important;
+}
+
 #myCarousel, #myCarousel1{
     width: 100%;
 }
