@@ -554,3 +554,38 @@ a.carrinho-card img {
         margin: 60% auto;
     }
 }
+@media screen and (max-width: 360px) {
+    #carrosel1-mob, #carrosel2-mob{
+        display: block;   
+    }
+    #carrosel1, #carrosel2{
+        display: none;
+    }
+    #carrosel1-mob .carousel-inner, #carrosel2-mob .carousel-inner{
+        margin: 20px auto !important;
+        display: flex;
+        justify-content: center;
+    }
+    #carouselBanner img.d-blok.w-100 {
+        height: 250px;
+        object-fit: cover;
+    }
+    .logo {
+        width: 45px;
+        margin-left: 0;
+    }
+    .dark .logo {
+        width: 50px;
+        margin-left: 0;
+    }
+    input#pesquisa {
+        width: auto;
+    }
+    #modoescuro {
+        margin: 10px;
+    }
+    .container-custom {
+        max-width: 330px;
+        margin: 60% auto;
+    }
+}
