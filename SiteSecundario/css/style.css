@@ -353,16 +353,17 @@ footer{
 .dark .card div:first-child {
     background-color: #000000;
     color: #7c7c7c;
-    width: 560px;
+    width: 100%;
     padding: 20px;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     gap: 15px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
 }
 .dark .carrinho-interno{
-    top: 200px;
+    top: 90px;
     padding: 20px;
     margin: 0 auto;
     width: 800px;
@@ -496,7 +497,7 @@ footer{
     gap: 15px;
     align-items: center;
     justify-content: flex-start;
-}
+    }
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -508,7 +509,7 @@ footer{
         margin: 10px;
     }
     .dark .carrinho-interno{
-        width: 60%;
+        width: 80%;
     }
 }
 

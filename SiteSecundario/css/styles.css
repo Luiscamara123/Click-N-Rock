@@ -273,10 +273,11 @@ a.btn-cor.btn-cor-branco {
   top: 0;
   right: 0;
   background-color: #000000bf;
+  z-index: 9;
 }
 
 .carrinho-interno {
-  top: 200px;
+  top: 90px;
   padding: 20px;
   margin: 0 auto;
   width: 800px;
@@ -293,7 +294,7 @@ a.btn-cor.btn-cor-branco {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: transparent;
+  background-color: transparent !important;
   color: #000000;
   font-weight: bold;
   width: 50px;
