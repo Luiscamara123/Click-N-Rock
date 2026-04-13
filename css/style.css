@@ -88,6 +88,7 @@ div#navbarNav {
 /* Dropdown img */
 .dropbtn img{
     border-radius: 100%;
+    filter: invert(1);
 }
 
 /* Links inside dropdown content */
@@ -118,11 +119,11 @@ div#navbarNav {
 }
 
 /*------------------*/
-
+/*
 div#carouselBanner {
     padding-top: 90px;
 }
-
+*/
 input#pesquisa{
     width: 650px;
     height: 40px;
@@ -204,6 +205,10 @@ a.nav-link.active:hover{
     color:  rgb(255, 255, 255) !important;
     font-size: 20px;
     border-bottom: 2px solid;
+}
+
+.icon-carrinho{
+    filter: invert(1);
 }
 footer{
     width: 100%;
