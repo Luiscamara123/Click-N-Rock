@@ -181,6 +181,7 @@ a.nav-link.active{
     font-size: 17px;
     border-bottom: 2px solid;
 }
+
 a.nav-link.active:hover{
     color:  rgb(255, 255, 255) !important;
     font-size: 20px;
@@ -393,6 +394,7 @@ footer{
     border-radius: 15px !important;
     border: 2px solid black !important;
 }
+
 .dark .carousel-control-next, .dark  .carousel-control-prev {
     filter: none;
 }
