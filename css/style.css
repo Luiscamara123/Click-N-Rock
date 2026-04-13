@@ -51,7 +51,7 @@ div#navbarNav {
     width: 100%;
     z-index: 9;
     position: fixed;
-    background-color: #0d1eb813 ;
+    background-color: #0000002e;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
