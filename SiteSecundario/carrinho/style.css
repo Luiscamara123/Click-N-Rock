@@ -10,3 +10,12 @@ body{
     font-family: "Rubik Distressed", system-ui;
     color: black;
 }
+
+
+/*---------------  RESPONSIVO  ---------------*/
+@media screen and (max-width: 768px) {
+    .title-carrinho{
+        margin-top: 150px;
+        font-size: 55px !important;
+    }
+}
