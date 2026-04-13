@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
+body{
+    background-attachment: fixed;
+}
+.title-carrinho{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 100px !important; 
+    font-family: "Rubik Distressed", system-ui;
+    color: black;
+}
