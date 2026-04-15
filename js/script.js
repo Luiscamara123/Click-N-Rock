@@ -142,7 +142,7 @@ function renderCart(){
                     <button class="qty-btn" data-index="${index}" data-action="plus">+</button>
                 </div>
 
-                <p>Subtotal: R$ ${subtotal.toFixed(2)}</p>
+                <p>Valor total: R$ ${subtotal.toFixed(2)}</p>
             </div>
 
             <div class="delete" data-index="${index}">🗑️</div>
