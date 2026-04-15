@@ -48,7 +48,13 @@
           <a href="./formulario/Cadastrar/index.html">Cadastrar</a>
         </div>
       </div>
+      <div class="cart">
+          <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png">
+          <div class="cart-count icon-carrinho" id="cartCount">0</div>
+      </div>
     </nav>
+
+
   </header>
   <!--Carrosel-Banner-->
   <section>
@@ -90,13 +96,11 @@
               <div class="card col-md-2">
                 <div class="produto">
                   <img class="img-card" src="imgPrincipal/jaqueta3.jpg">
-                  <h3>Jaqueta Jeans Queen</h3>
-                  <p>R$ 299,99</p>
+                  <h3 class="product-name">Jaqueta Jeans Queen</h3>
+                  <p class="product-price">R$ 299,99</p>
                   <div class="ajuste-carrinho">
                     <a href="SiteSecundario/jaqueta3.html"><button class="button-card" type="submit">Comprar</button></a>
-                    <a href="#" class="carrinho-card">
-                      <img src="imgPrincipal/carrinho-card.png">
-                    </a>
+                    <button class="add-btn">Adicionar</button>
                   </div>
                 </div>
               </div>
@@ -833,6 +837,29 @@
     </div>
   </section>
   </main>
+<div class="cart-modal" id="cartModal">
+
+<div class="cart-header">
+<h2>Carrinho</h2>
+<span class="close-btn">✖</span>
+</div>
+
+<div id="emptyMessage">🛒 Seu carrinho está vazio</div>
+
+<div id="cartItems"></div>
+<div class="total" id="total"></div>
+
+<button class="checkout">Finalizar Compra</button>
+
+</div>
+
+<div class="success-modal" id="successModal">
+<div class="success-box">
+<h2>✅ Compra realizada!</h2>
+<p>Pedido finalizado com sucesso 🎸</p>
+<button id="closeSuccess">Fechar</button>
+</div>
+</div>
   <!--Footer-->
   <footer id="contato">
     <div id="footer_content">
