@@ -498,6 +498,12 @@ a.carrinho-card img {
 }
 
 /* ---------------Funcionalidades add carrinho---------------------- */
+img.add-btn {
+    width: 30px;
+    height: auto;
+    margin: 0 !important;
+    cursor: pointer;
+}
 .cart {
     position: relative;
     cursor: pointer;
@@ -581,6 +587,7 @@ button {
     display: flex;
     gap: 5px;
     margin-top: 5px;
+    align-items: center;
 }
 
 .qty-btn {
@@ -589,6 +596,7 @@ button {
     border: none;
     color: white;
     cursor: pointer;
+    margin: 0;
 }
 
 .delete {
