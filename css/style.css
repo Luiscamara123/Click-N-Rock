@@ -57,10 +57,6 @@ div#navbarNav {
     justify-content: space-around;
 }
 
-.dark .navbar img {
-  filter: invert(1);
-}
-
 /*--------------------USER ICON-----------------------*/
 .dropdown {
   position: relative;
@@ -150,7 +146,6 @@ header{
 .dark .logo{
     width: 75px;
     margin-left: 30px;
-    filter: invert(1);
 }
 .navbar.bg-custom{
     width: 80%;
@@ -198,7 +193,6 @@ a.nav-link.active:hover{
     border-bottom: 2px solid white;
 }
 .dark a.nav-link.active{
-    color: #00fffb !important;
     font-size: 17px;
     border-bottom: 2px solid;
 }
@@ -270,9 +264,6 @@ footer{
 .footer-list .footer-link {
     color: #6b6b6b;
     transition: all 0.4s;
-}
-.dark .footer-list .footer-link:hover{
-    color: #00fffc8f;
 }
 .footer-list .footer-link:hover{
     color:  rgb(162, 44, 41);
@@ -357,9 +348,6 @@ footer{
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
-}
-.dark .navbar-toggler{
-    background-color: #00fffc8f;
 }
 .dark #input_group{
     background-color: #c2c2c2;
@@ -658,7 +646,8 @@ button {
     }
     .navbar-toggler{
         margin: 10px;
-        background-color: rgba(180, 180, 180, 0.562);
+        background-color: rgb(180 180 180 / 20%);
+        border: solid 1px #ffffffbd;
     }
     div#carouselBanner {
     padding-top: 150px;
