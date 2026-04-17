@@ -17,7 +17,7 @@ body{
 }
 
 body.dark{
-    background-image: linear-gradient(black, rgb(1, 1, 37), rgb(0, 0, 0));
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.767), rgb(29, 29, 29));
 }
 h3{
     color: black;
