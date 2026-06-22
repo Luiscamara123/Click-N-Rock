@@ -76,8 +76,14 @@ div#navbarNav {
 }
 
 /* Dropdown img */
+.dark img.icon-carrinho{
+    filter: invert();
+}
 .dropbtn img{
     border-radius: 100%;
+}
+.dark .dropbtn img{
+    filter: invert(1);
 }
 
 /* Links inside dropdown content */
