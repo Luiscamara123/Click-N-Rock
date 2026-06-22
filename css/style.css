@@ -513,7 +513,6 @@ img.add-btn {
     z-index: 99;
 }
 button {
-    margin-top: 10px;
     background: red;
     border: none;
     color: white;

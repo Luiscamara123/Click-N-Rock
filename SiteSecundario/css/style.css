@@ -14,7 +14,7 @@ body{
     background-image: linear-gradient(rgb(255 255 255), rgb(175, 175, 175));
 }
 body.dark{
-    background-image: linear-gradient(black, rgb(1, 1, 37), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.767), rgb(0, 0, 0));
 }
 h1{
     color: rgb(214, 213, 201);
@@ -247,11 +247,11 @@ footer{
     list-style: none;
 }
 .footer-list .footer-link {
-    color: #a8a29e;
+    color: #7c7c7c;
     transition: all 0.4s;
 }
 .dark .footer-list .footer-link:hover{
-    color: #00fffc8f;
+    color:  rgb(162, 44, 41);
 }
 .footer-list .footer-link:hover{
     color:  rgb(162, 44, 41);
@@ -262,13 +262,13 @@ footer{
     gap: 1.5rem;
 }
 #footer_subscribe p{
-    color: #a8a29e;
+    color: #8b8b8b;
 }
 
 #input_group{
     display: flex;
     align-items: center;
-    background-color: #c2c2c2;
+    background-color: #ffffff;
     border-radius: 4px;
 }
 #input_group input{
@@ -309,7 +309,7 @@ footer{
     z-index: 99;
 }
 .dark{
-    background-color: #910f0f;
+    background-color: #000000;
     color: #f0f0f0;
 }
 .dark h1, .dark h2,.dark h3,.dark p{
