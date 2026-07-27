@@ -393,12 +393,7 @@ footer{
 .dark .carousel-control-next, .dark  .carousel-control-prev {
     filter: none;
 }
-.carousel-control-next-icon{
-    /*background-image: url(./next.png) ;*/
-}
-.carousel-control-prev-icon{
-    /*background-image: url(./back.png);*/
-}
+
 .produto{
     display: flex;
     flex-direction: column;
