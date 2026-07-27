@@ -1,4 +1,4 @@
-const produtos = [];
+/*const produtos = [];
 const btnCarrinho = document.querySelector('#carrinho');
 const carrinhoLateral = document.querySelector('.carrinho-lateral');
 const carrinhoInterno = document.querySelector('.carrinho-lateral .carrinho-interno');
@@ -70,4 +70,4 @@ carrinhoInterno.addEventListener('click', (e) => {
     if (e.target.classList.contains('fechar')) {
         carrinhoLateral.classList.remove('active');
     }
-});
+});*/
