@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./css/headers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -47,7 +47,10 @@
           <a href="../formulario/Cadastrar/index.html">Cadastrar</a>
         </div>
       </div>
-      <a href="../SiteSecundario/carrinho/index.html"><img class="icon-carrinho" width="40px" src="https://cdn-icons-png.flaticon.com/512/263/263142.png"></a>
+      <div class="cart">
+        <img class="icon-carrinho" width="40px" src="https://cdn-icons-png.flaticon.com/512/263/263142.png">
+        <div class="cart-count icon-carrinho"id="cartCount">0</div>
+      </div>
     </nav>
   </header>
   <main class="container">
@@ -56,7 +59,7 @@
         <img src="imgSecundaria/Acessorios/All star1.jpg" alt="All star" />
       </div>
       <div class="product-info">
-        <h2>All Star converse preto</h2>
+        <h2 class="product-name">All Star converse preto</h2>
         <p class="product-code">Código do Produto: 98765XYZ</p>
         <p class="price">R$ <span>249,99</span></p>
         <p class="rating">
@@ -77,7 +80,7 @@
           <input type="number" id="quantity" value="1" />
         </div>
         <div class="buttons">
-          <a href="carrinho.html" id="carrinho" class="add-to-cart">
+          <a class="add-btn">
             Comprar
           </a>
           <button class="add-to-wishlist">
@@ -108,6 +111,31 @@
   <div class="carrinho-lateral">
       <div class="carrinho-interno"></div>
   </div>
+  <!-----------------Carrinho Lateral----------------->
+  <div class="cart-modal" id="cartModal">
+
+  <div class="cart-header">
+  <h2>Carrinho</h2>
+  <span class="close-btn">✖</span>
+  </div>
+
+  <div id="emptyMessage">🛒 Seu carrinho está vazio</div>
+
+  <div id="cartItems"></div>
+  <div class="total" id="total"></div>
+
+  <button class="checkout">Finalizar Compra</button>
+
+  </div>
+
+  <div class="success-modal" id="successModal">
+  <div class="success-box">
+  <h2>✅ Compra realizada!</h2>
+  <p>Pedido finalizado com sucesso 🎸</p>
+  <button id="closeSuccess">Fechar</button>
+  </div>
+  </div>
+  <!------------------------------------------------->
   <footer id="contato">
     <div id="footer_content">
       <div id="footer_contacts">
@@ -188,7 +216,7 @@
     </div>
   </footer>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
   <script src="js/script-carrinho.js"></script>
 </body>
 
