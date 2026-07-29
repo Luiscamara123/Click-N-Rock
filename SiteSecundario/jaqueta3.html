@@ -46,7 +46,10 @@
           <a href="../formulario/Cadastrar/index.html">Cadastrar</a>
         </div>
       </div>
-      <a href="../SiteSecundario/carrinho/index.html"><img class="icon-carrinho" width="40px" src="https://cdn-icons-png.flaticon.com/512/263/263142.png"></a>
+      <div class="cart">
+        <img class="icon-carrinho" width="40px" src="https://cdn-icons-png.flaticon.com/512/263/263142.png">
+        <div class="cart-count icon-carrinho"id="cartCount">0</div>
+      </div>
     </nav>
   </header>
     <main class="container">
@@ -102,11 +105,36 @@
       </div>
       
     </main>
+    <button id="modoEscuro">🌙</button>
     <div class="carrinho-lateral">
       <div class="carrinho-interno">
       </div>
     </div>
-    <button id="modoEscuro">🌙</button>
+    <!-----------------Carrinho Lateral----------------->
+  <div class="cart-modal" id="cartModal">
+
+  <div class="cart-header">
+  <h2>Carrinho</h2>
+  <span class="close-btn">✖</span>
+  </div>
+
+  <div id="emptyMessage">🛒 Seu carrinho está vazio</div>
+
+  <div id="cartItems"></div>
+  <div class="total" id="total"></div>
+
+  <button class="checkout">Finalizar Compra</button>
+
+  </div>
+
+  <div class="success-modal" id="successModal">
+  <div class="success-box">
+  <h2>✅ Compra realizada!</h2>
+  <p>Pedido finalizado com sucesso 🎸</p>
+  <button id="closeSuccess">Fechar</button>
+  </div>
+  </div>
+  <!------------------------------------------------->
   <footer id="contato">
     <div id="footer_content">
       <div id="footer_contacts">
