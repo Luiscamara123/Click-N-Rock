@@ -86,6 +86,9 @@ document.addEventListener("click", function(e){
         document.getElementById("successModal").style.display = "none";
     }
 
+    function toggleCart(){
+        document.getElementById("cartModal").classList.toggle("active");
+    }
 });
 
 function updateCart(){
@@ -96,9 +99,6 @@ function updateCart(){
     renderCart();
 }
 
-function toggleCart(){
-    document.getElementById("cartModal").classList.toggle("active");
-}
 
 function changeQty(index, delta){
     cart[index].qtd += delta;

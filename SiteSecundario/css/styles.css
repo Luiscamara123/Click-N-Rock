@@ -1,11 +1,4 @@
 /* Estilos Globais */
-body {
-  font-family: Arial, sans-serif;
-  background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0));
-  color: #e0e0e0;
-  margin: 0;
-  padding: 0;
-}
 .navbar{
     top: 0;
     width: 100%;
