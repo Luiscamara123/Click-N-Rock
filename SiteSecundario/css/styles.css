@@ -354,6 +354,19 @@ a.btn-cor.btn-cor-branco {
   color: rgba(205, 172, 134);
 }
 
+/*--------------- Estilizacao Botao Comprar site (produtos) ----------------*/
+
+a.add-btn {
+  text-decoration: none;
+  margin-top: 7px;
+  padding: 10px;
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+}
+
+/*---------------------------------------------------------------------------*/
+
 @media screen and (max-width: 768px) {
   .product-details {
     display: flex;
