@@ -585,16 +585,31 @@ button {
     margin-top: 5px;
     align-items: center;
 }
-
+span.carousel-control-next-icon {
+    filter: invert(1);
+}
+.dark span.carousel-control-next-icon {
+    filter: none;
+}
+span.carousel-control-prev-icon {
+    filter: invert(1);
+}
+.dark span.carousel-control-prev-icon {
+    filter: none;
+}
 .qty-btn {
-    padding: 3px 8px;
-    background: #555;
-    border: none;
-    color: white;
+    font-size: 10px;
+    padding: 5px 8px;
+    background: #6d6d6d4f;
+    color: #000000;
     cursor: pointer;
     margin: 0;
+    border-radius: 15px;
 }
-
+.dark .qty-btn{
+    background: #c3c3c330;
+    color: #ffffff;
+}
 .delete {
     cursor: pointer;
     color: red;
