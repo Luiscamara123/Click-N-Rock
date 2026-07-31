@@ -362,14 +362,13 @@ a.add-btn {
   height: 50px;
   width: 200px;
   text-decoration: none;
-  margin-top: 7px;
   padding: 10px;
   background-color: green;
   border-radius: 5px;
   color: white;
   justify-content: center;
   align-items: center;
-  transition: 0.5s
+  transition: 0.3s;
 }
 a.add-btn:hover{
   opacity: 0.7;
