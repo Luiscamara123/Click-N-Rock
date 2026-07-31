@@ -53,7 +53,30 @@ div#navbarNav {
     display: flex;
     justify-content: space-around;
 }
+
+.navbar-produtos{
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    background-color: #7575751c;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+}
+
 .dark .navbar, .navbar{
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    background-color: #0000002e;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+}
+
+.dark .navbar-produtos, .navbar{
     top: 0;
     width: 100%;
     z-index: 9;
@@ -160,6 +183,14 @@ header{
     display: flex;
     justify-content: space-between;
 }
+
+.navbar-produtos.bg-custom{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
 .bg-custom{
     background-color:  rgb(10, 16, 13);
 }
@@ -386,6 +417,7 @@ footer{
 }
 
 .container{
+    padding: 90px 12px 20px 12px;
     display: flex;
 }
 .card{
@@ -664,9 +696,14 @@ span #cartcount{
 }
 
 #emptyMessage {
+    color: #000000;
     text-align: center;
     margin-top: 20px;
     display: none;
+}
+
+.dark #emptyMessage{
+    color: white;
 }
 
 /*-----------------------------------------------------*/
