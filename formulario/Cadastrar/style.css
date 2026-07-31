@@ -20,18 +20,6 @@ body.dark{
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
    margin: 10% auto;
 }
-/*.container .registration{
-    display: none;
-}
-#check:checked ~ .registration{
-    display: block;
-}
-#check:checked ~ .login{
-    display: none;
-}
-#check{
-    display: none;
-}*/
 .container-custom .form{
     padding: 2rem;
 
