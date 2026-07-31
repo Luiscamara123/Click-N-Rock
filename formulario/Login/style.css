@@ -77,8 +77,8 @@ body.dark{
     text-decoration: underline;
 }
 .form input.button{
-    color: blue;
-    background: 009579;
+    color: rgb(255, 255, 255);
+    background: rgb(28, 187, 14);
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 1px;
