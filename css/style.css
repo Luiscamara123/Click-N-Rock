@@ -566,6 +566,12 @@ button {
     transition: 0.3s;
     overflow-y: auto;
 }
+
+.cart-modal h2{
+    font-family: "Rye", serif;
+    margin: 15px 50px;
+}
+
 .dark .cart-modal.active{
     background: #1a1a1a;
 }
