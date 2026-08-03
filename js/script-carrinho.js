@@ -1,6 +1,6 @@
 /*const produtos = [];
 const btnCarrinho = document.querySelector('#carrinho');
-const carrinhoLateral = document.querySelector('.carrinho-lateral');
+const carinhoLateral = document.querySelector('.carrinho-lateral');
 const carrinhoInterno = document.querySelector('.carrinho-lateral .carrinho-interno');
 
 
