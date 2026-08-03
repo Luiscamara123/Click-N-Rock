@@ -19,10 +19,15 @@ body.dark{
    max-width: 430px;
    width: 100%;
    background: #fff;
-   border-radius: 7px;
+   border-radius: 15px;
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
    margin: 10% auto;
 }
+
+.dark .container-custom{
+    background-color: #393939;
+}
+
 .container-custom .registration{
     display: none;
 }
@@ -73,6 +78,11 @@ body.dark{
     color: 009579;
     text-decoration: none;
 }
+
+.dark .form a{
+    color: #ff2727;
+}
+
 .form a:hover{
     text-decoration: underline;
 }
@@ -85,6 +95,7 @@ body.dark{
     margin-top: 1.7rem;
     cursor: pointer;
     transition: 0.4s;
+    border: none;
 }
 .form input.button:hover{
     background: 006653;
