@@ -21,6 +21,17 @@ body.dark{
    margin: 10% auto;
 }
 
+.login_tittle{
+    color: white;
+}
+.dark .login_tittle{
+    color: black;
+}
+
+.dark header, .dark footer, .dark #footer_content{
+    color: white;
+}
+
 .dark .container-custom{
     background-color: #393939;
 }
