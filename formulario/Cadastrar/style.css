@@ -35,7 +35,6 @@ body.dark{
 .dark .container-custom{
     background-color: #393939;
 }
-
 .container-custom .form{
     padding: 2rem;
 
@@ -47,6 +46,7 @@ body.dark{
     margin-bottom: 1.5rem;  
 }
 .form input{
+    color: #777777;
     height: 60px;
     width: 100%;
     padding: 0 15px;
@@ -57,6 +57,7 @@ body.dark{
     outline: none;
 }
 .form select{
+    color: #777777;
     height: 60px;
     width: 100%;
     padding: 0 15px;
@@ -86,7 +87,8 @@ body.dark{
     margin-top: 1.7rem;
     cursor: pointer;
     transition: 0.4s;
-}
+    border: none;
+}c
 .form input.button:hover{
     background: 006653;
 }
@@ -97,6 +99,9 @@ body.dark{
 .signup label{
     color: #009579;
     cursor: pointer;
+}
+.dark .signup label{
+    color: #93ffa2;
 }
 .signup label:hover{
     text-decoration: underline;

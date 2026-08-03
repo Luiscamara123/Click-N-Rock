@@ -698,12 +698,16 @@ span #cartcount{
 }
 
 .success-box {
-    background: #222;
+    background: #cccccc;
     color: #fff;
     padding: 30px;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.success-box img{
+    width: 60px;
 }
 
 #emptyMessage {
