@@ -10,7 +10,7 @@ body{
     background-attachment: fixed;
 }
 .dark header{
-    color: white;
+    color: white !important;
 }
 body.dark{
     background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0));

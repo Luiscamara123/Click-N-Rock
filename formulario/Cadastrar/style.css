@@ -22,10 +22,10 @@ body.dark{
 }
 
 .login_tittle{
-    color: white;
+    color: black;
 }
 .dark .login_tittle{
-    color: black;
+    color: white;
 }
 
 .dark header, .dark footer, .dark #footer_content{
