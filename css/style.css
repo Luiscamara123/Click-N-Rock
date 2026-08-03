@@ -698,6 +698,7 @@ span #cartcount{
 }
 
 .success-box {
+    width: 450px;
     background: #cccccc;
     color: #fff;
     padding: 30px;
