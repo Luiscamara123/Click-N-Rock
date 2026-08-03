@@ -10,7 +10,9 @@ body{
     background-image: linear-gradient(rgb(255 255 255), rgb(175, 175, 175));
     background-attachment: fixed;
 }
-
+.dark header{
+    color: white;
+}
 body.dark{
     background-image: linear-gradient(black, rgb(1, 2, 73), rgb(0, 0, 0));
     background-attachment: fixed;
@@ -23,7 +25,6 @@ body.dark{
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
    margin: 10% auto;
 }
-
 .dark .container-custom{
     background-color: #393939;
 }
@@ -107,6 +108,9 @@ body.dark{
 .signup label{
     color: #009579;
     cursor: pointer;
+}
+.dark .signup label{
+    color: #93ffa2;
 }
 .signup label:hover{
     text-decoration: underline;
