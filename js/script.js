@@ -160,13 +160,31 @@ function renderCart(){
     totalDiv.innerText = "Total: R$ " + total.toFixed(2);
 }
 
+function showSuccessModal(){
+    const modal = document.getElementById("successModal");
+
+    if(!modal) return;
+
+    if(!modal.innerHTML.trim()){
+        modal.innerHTML = `
+            <div class="success-box">
+                <h2>✅ Compra realizada!</h2>
+                <p>Pedido finalizado com sucesso 🎸</p>
+                <button id="closeSuccess" type="button">Fechar</button>
+            </div>
+        `;
+    }
+
+    modal.style.display = "flex";
+}
+
 function checkout(){
     if(cart.length === 0){
         toggleCart();
         return;
     }
 
-    document.getElementById("successModal").style.display = "flex";
+    showSuccessModal();
     cart = [];
     updateCart();
 }
