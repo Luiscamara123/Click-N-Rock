@@ -82,7 +82,7 @@ div#navbarNav {
     width: 100%;
     z-index: 9;
     position: fixed;
-    background-color: #0000002e;
+    background-color: #0000001a;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
