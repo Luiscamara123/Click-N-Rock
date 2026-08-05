@@ -25,12 +25,18 @@ h3{
 h2{
     color: black;
 }
-.dark h2{
-    color: rgb(255, 255, 255);
-}
+
 h1{
     color: rgb(214, 213, 201);
     font-family: "Rubik Distressed", system-ui;
+}
+
+.dark h2{
+    color: rgb(255, 255, 255);
+}
+
+P{
+    color: #000000;
 }
 
 .produtos-carrosel{
@@ -699,7 +705,7 @@ span #cartcount{
 
 .success-box {
     width: 450px;
-    background: #cccccc;
+    background: #fffdfd;
     color: #fff;
     padding: 30px;
     border-radius: 12px;
@@ -711,10 +717,28 @@ span #cartcount{
     width: 60px;
 }
 
+
+/*---------- Botao compra realizada com sucesso ----------*/
+#closeSuccess{
+    padding: 7px 55px;
+    background: #000000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.7s;
+}
+
+#closeSuccess:hover{
+    opacity: 0.7;
+}
+/*----------------------------------------------------------*/
+
+
 /*------------- Star divider functionality ----------*/
 
 span.star-divider {
-    color: green;
+    color: rgb(1, 216, 1);
     position: relative;
 }
 
@@ -725,7 +749,7 @@ span.star-divider:after{
     top: 50%;
     width: 150px;
     height: 2px;
-    background: green;
+    background: rgba(2, 177, 2, 0.486);
 }
 
 span.star-divider:before{
