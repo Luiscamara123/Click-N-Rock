@@ -35,10 +35,6 @@ h1{
     color: rgb(255, 255, 255);
 }
 
-P{
-    color: #000000;
-}
-
 .produtos-carrosel{
     color: black;
     margin: 50px;
@@ -714,7 +710,12 @@ span #cartcount{
 }
 
 .success-box img{
-    width: 60px;
+    width: 90px;
+}
+
+.success-box p{
+    margin-top: 20px;
+    color: #000000c2;
 }
 
 
