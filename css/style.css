@@ -718,6 +718,11 @@ span #cartcount{
     color: #000000c2;
 }
 
+.success-box h2{
+    color: black;
+    margin-top: 20px;
+}
+
 
 /*---------- Botao compra realizada com sucesso ----------*/
 #closeSuccess{
