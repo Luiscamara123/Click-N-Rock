@@ -735,18 +735,23 @@ span #cartcount{
 .numero-pedido{
     background-color: #a7a7a73a;
     border-radius: 15px;
-    width: 350px;
-    display: flex;
     flex-direction: row;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    padding: 15px 40px;
+    gap: 20px;
+    width: max-content;
 }
 
 .numero-pedido h3{
+    margin: 0;
     font-size: 15px;
     color: #000000a6;
 }
 
 .numero-pedido p{
+    margin: 0;
     font-weight: bold;
     color: rgb(1, 185, 1);
 }
@@ -755,7 +760,13 @@ span #cartcount{
     width: 40px;
     height: 40px;
 }
-
+.gap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: flex-start;
+}
 /*-------------------------------------------------------*/
 
 
@@ -891,6 +902,9 @@ span.star-divider:after{
     .container-custom {
         max-width: 330px;
         margin: 60% auto;
+    }
+    .success-box{
+        width: 90%;
     }
 }
 @media screen and (max-width: 360px) {

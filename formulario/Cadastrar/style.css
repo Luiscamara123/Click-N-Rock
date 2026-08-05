@@ -5,6 +5,7 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+/* Style página cadastro */
 body{
     background-image: linear-gradient(rgb(255 255 255), rgb(175, 175, 175));
 }
@@ -35,7 +36,7 @@ body.dark{
 .dark .container-custom{
     background-color: #393939;
 }
-.container-custom .form{
+#paginaCadastro .container-custom .form{
     padding: 2rem;
 
 }
@@ -106,3 +107,5 @@ body.dark{
 .signup label:hover{
     text-decoration: underline;
 }
+
+/* /FIM - Style página cadastro */
