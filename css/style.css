@@ -700,6 +700,9 @@ span #cartcount{
 }
 
 .success-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 450px;
     background: #fffdfd;
     color: #fff;
@@ -732,6 +735,10 @@ span #cartcount{
 .numero-pedido{
     background-color: #a7a7a73a;
     border-radius: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .numero-pedido h3{
@@ -743,6 +750,12 @@ span #cartcount{
     font-weight: bold;
     color: rgb(1, 185, 1);
 }
+
+.numero-pedido img{
+    width: 40px;
+    height: 40px;
+}
+
 /*-------------------------------------------------------*/
 
 
