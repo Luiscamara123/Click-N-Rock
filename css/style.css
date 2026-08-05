@@ -711,6 +711,33 @@ span #cartcount{
     width: 60px;
 }
 
+/*------------- Star divider functionality ----------*/
+
+span.star-divider {
+    color: green;
+    position: relative;
+}
+
+span.star-divider:before, 
+span.star-divider:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 150px;
+    height: 2px;
+    background: green;
+}
+
+span.star-divider:before{
+    right: 20px;
+}
+
+span.star-divider:after{
+    left: 20px;
+}
+
+/*-------------------------------------------------------*/
+
 #emptyMessage {
     color: #000000;
     text-align: center;
