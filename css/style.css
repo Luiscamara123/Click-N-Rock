@@ -723,6 +723,28 @@ span #cartcount{
     margin-top: 20px;
 }
 
+.success-box hr{
+    color: #050505;
+    opacity: 0.2;
+}
+
+/*--------------- Numero do pedido estilo ---------------*/
+.numero-pedido{
+    background-color: #a7a7a73a;
+    border-radius: 15px;
+}
+
+.numero-pedido h3{
+    font-size: 15px;
+    color: #000000a6;
+}
+
+.numero-pedido p{
+    font-weight: bold;
+    color: rgb(1, 185, 1);
+}
+/*-------------------------------------------------------*/
+
 
 /*---------- Botao compra realizada com sucesso ----------*/
 #closeSuccess{
