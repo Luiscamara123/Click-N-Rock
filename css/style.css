@@ -936,6 +936,119 @@ span.star-divider:after{
 }
 
 /* /FIM - Style página cadastro */
+
+/* Style página login */
+#paginaLogin{
+    background-image: linear-gradient(rgb(255 255 255), rgb(175, 175, 175));
+    background-attachment: fixed;
+}
+#paginaLogin.dark header{
+    color: white !important;
+}
+#paginaLogin.dark{
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.767), rgb(29, 29, 29));
+    background-attachment: fixed;
+}
+#paginaLogin .container-custom{
+   max-width: 430px;
+   width: 100%;
+   background: #fff;
+   border-radius: 15px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+   margin: 10% auto;
+}
+#paginaLogin.dark .container-custom{
+    background-color: #393939;
+}
+
+#paginaLogin .container-custom .registration{
+    display: none;
+}
+#paginaLogin #check:checked ~ .registration{
+    display: block;
+}
+#paginaLogin #check:checked ~ .login{
+    display: none;
+}
+#paginaLogin #check{
+    display: none;
+}
+#paginaLogin .container-custom .form{
+    padding: 2rem;
+
+}
+#paginaLogin .form header{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;  
+}
+#paginaLogin .form input{
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+#paginaLogin .form select{
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+#paginaLogin .form input:focus{
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+#paginaLogin .form a{
+    font-size: 16px;
+    color: 009579;
+    text-decoration: none;
+}
+
+#paginaLogin.dark .form a{
+    color: #ff2727;
+}
+
+#paginaLogin .form a:hover{
+    text-decoration: underline;
+}
+#paginaLogin .form input.button{
+    color: rgb(255, 255, 255);
+    background: rgb(28, 187, 14);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+}
+#paginaLogin .form input.button:hover{
+    background: 006653;
+}
+#paginaLogin.signup{
+    font-size: 17px;
+    text-align: center;
+}
+#paginaLogin .signup label{
+    color: #009579;
+    cursor: pointer;
+}
+#paginaLogin.dark .signup label{
+    color: #93ffa2;
+}
+#paginaLogin .signup label:hover{
+    text-decoration: underline;
+}
+/* ---------------------------------------------------------- FIM - Style página login ------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width: 768px) {
     #carouselBanner .carousel-control-prev,#carouselBanner .carousel-control-next {
         display: none;
