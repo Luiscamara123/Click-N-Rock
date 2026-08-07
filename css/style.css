@@ -1013,7 +1013,7 @@ span.star-divider:after{
 }
 
 #paginaLogin.dark .form a{
-    color: #ff2727;
+    color: #81a7ff;
 }
 
 #paginaLogin .form a:hover{
@@ -1108,12 +1108,15 @@ span.star-divider:after{
   margin-bottom: 10px;
 }
 #paginaProduto h2{
+    color: black;
+    margin-top: 20px;
+}
+#paginaProduto .product-info h2{
     margin: 50px;
     font-size: 40px;
-    text-align:left;
+    text-align: left;
     font-family: "Rye", serif;
 }
-
 #paginaProduto .product-info h2 {
   font-size: 2.5rem;
   margin: 10px 0;
