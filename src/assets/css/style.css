@@ -870,11 +870,16 @@ span.star-divider:after{
 }
 
 
-/* Style página cadastro */
+/*===============================================================================================================================================================================*/
+/*======================================================================= Style página cadastro =================================================================================*/
+/*===============================================================================================================================================================================*/
+
+
 #paginaCadastro{
     background-image: linear-gradient(rgb(255 255 255), rgb(175, 175, 175));
 }
 
+/*(modo escuro do paginaCadastro)*/
 #paginaCadastro.dark{
     background-image: linear-gradient(black, rgba(0, 0, 0, 0.767), rgb(29, 29, 29));
 }
@@ -911,16 +916,19 @@ span.star-divider:after{
 #paginaCadastro.dark .container-custom{
     background-color: #393939;
 }
+
 #paginaCadastro .container-custom .form{
     padding: 2rem;
 
 }
+
 #paginaCadastro .form header{
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
     margin-bottom: 1.5rem;  
 }
+
 #paginaCadastro .form input{
     color: #777777;
     height: 60px;
@@ -932,6 +940,7 @@ span.star-divider:after{
     border-radius: 6px;
     outline: none;
 }
+
 #paginaCadastro .form select{
     color: #777777;
     height: 60px;
@@ -943,17 +952,21 @@ span.star-divider:after{
     border-radius: 6px;
     outline: none;
 }
+
 #paginaCadastro .form input:focus{
     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
+
 #paginaCadastro .form a{
     font-size: 16px;
     color: 009579;
     text-decoration: none;
 }
+
 #paginaCadastro .form a:hover{
     text-decoration: underline;
 }
+
 #paginaCadastro .form input.button{
     color: rgb(255, 255, 255);
     background: rgb(28, 187, 14);
@@ -965,25 +978,34 @@ span.star-divider:after{
     transition: 0.4s;
     border: none;
 }
+
 #paginaCadastro .form input.button:hover{
     background: 006653;
 }
+
 #paginaCadastro .signup{
     font-size: 17px;
     text-align: center;
 }
+
 #paginaCadastro .signup label{
     color: #009579;
     cursor: pointer;
 }
+
 #paginaCadastro.dark .signup label{
     color: #93ffa2;
 }
+
 #paginaCadastro .signup label:hover{
     text-decoration: underline;
 }
 
-/* /FIM - Style página cadastro */
+
+/*===============================================================================================================================================================================*/
+/*====================================================================== FIM Style página cadastro ===============================================================================*/
+/*===============================================================================================================================================================================*/
+
 
 /* Style página login */
 #paginaLogin{
