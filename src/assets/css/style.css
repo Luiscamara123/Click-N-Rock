@@ -1,50 +1,73 @@
+/*---------------------------------------------------------------- Links Importados ------------------------------------------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100..900&family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
+/*------------------------------------------------------------- FIM Links Importados ------------------------------------------------------------------------*/
+
+/*----------------------------------------------------- Seletor Universal --------------------------------------------------*/
+
 *{
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 1px;
-
 }
+/*--------------------------------------------------- FIM Seletor Universal --------------------------------------------------*/
+
+/*-------------------------------------------- Corpo do site ------------------------------------------*/
 
 body{
     background-image: linear-gradient(rgb(255 255 255), rgb(175, 175, 175));
 }
-
+/*(modo escuro do corpo do site)*/
 body.dark{
     background-image: linear-gradient(black, rgba(0, 0, 0, 0.767), rgb(29, 29, 29));
 }
-h3{
-    color: black;
-}
-h2{
-    color: black;
-}
+
+/*------------------------------------------FIM Corpo do site ------------------------------------------*/
+
+/*------------------------------------------------ Titulos e subtitulos --------------------------------------------*/
 
 h1{
     color: rgb(214, 213, 201);
     font-family: "Rubik Distressed", system-ui;
 }
 
+h2{
+    color: black;
+}
+/*(Modo escuro do subtitulo)*/
 .dark h2{
     color: rgb(255, 255, 255);
 }
 
-.produtos-carrosel{
+h3{
     color: black;
-    margin: 50px;
-    text-align: center;
-    font-size: 40px;
-    font-family: "Rubik Distressed", system-ui;
 }
+
+/*----------------------------------------------FIM Titulos e subtitulos ---------------------------------------------*/
+
+/*------------------------------------------------- Estilizacao da imagem da logo do site ---------------------------------------*/
+
+.logo{
+    width: 75px;
+    margin-left: 30px;
+}
+
+/*--------------------------------------------- FIM Estilizacao da imagem da logo do site ---------------------------------------*/
+
+
+/*0000000000000000000000000000000000000000000000000000000000000000000*/
+
 div#navbarNav {
     flex-grow: unset;
 }
+
 .navbar{
     top: 0;
     width: 100%;
@@ -88,6 +111,30 @@ div#navbarNav {
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
+}
+
+.navbar.bg-custom{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-produtos.bg-custom{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*00000000000000000000000000000000000000000000000000000000000000000000000*/
+
+.produtos-carrosel{
+    color: black;
+    margin: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Rubik Distressed", system-ui;
 }
 
 /*--------------------USER ICON-----------------------*/
@@ -172,27 +219,8 @@ header{
     margin-bottom: 0 auto;
     position: static;
 }
-.logo{
-    width: 75px;
-    margin-left: 30px;
-}
-.dark .logo{
-    width: 75px;
-    margin-left: 30px;
-}
-.navbar.bg-custom{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
 
-.navbar-produtos.bg-custom{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .bg-custom{
     background-color:  rgb(10, 16, 13);
@@ -1047,10 +1075,17 @@ span.star-divider:after{
 #paginaLogin .signup label:hover{
     text-decoration: underline;
 }
+
 /* ---------------------------------------------------------- FIM - Style página login ------------------------------------------------------------------------------------------*/
 
 
-/*----------------------------- Style Pagina Produtos --------------------------*/
+/*===============================================================================================================================================================================*/
+/*======================================================================= Style Pagina Produtos =================================================================================*/
+/*===============================================================================================================================================================================*/
+
+
+/*--------------------------------------------- Cabecalho pagina produto ------------------------------------------*/
+
 #paginaProduto .navbar{
     top: 0;
     width: 100%;
@@ -1061,6 +1096,7 @@ span.star-divider:after{
     display: flex;
     justify-content: space-around;
 }
+
 #paginaProduto.dark .navbar{
     top: 0;
     width: 100%;
@@ -1071,6 +1107,9 @@ span.star-divider:after{
     display: flex;
     justify-content: space-around;
 }
+
+/*------------------------------------------- FIM Cabecalho pagina produto ------------------------------------------*/
+
 #paginaProduto div#carouselBanner {
     padding-top: 90px;
 }
@@ -1430,8 +1469,13 @@ span.star-divider:after{
   width: 400px;
 }
 
-/*---------------------------------------------------------------------------*/
+/*------------------------------- FIM Style Pagina Produtos ----------------------------------*/
 
+
+/*---------------------------------------------------- Responsividade Mobile -----------------------------------------------------*/
+
+
+/*--------------------------------------------- Responsividade Pagina Produtos -------------------------------------*/
 @media screen and (max-width: 768px) {
   #paginaProduto .product-details {
     display: flex;
@@ -1491,7 +1535,7 @@ span.star-divider:after{
 
 }
 
-/*------------------------------- FIM Style Pagina Produtos ----------------------------------*/
+/*-------------------------------------------FIM Responsividade Pagina Produtos -------------------------------------*/
 
 @media screen and (max-width: 768px) {
     #carouselBanner .carousel-control-prev,#carouselBanner .carousel-control-next {
@@ -1611,3 +1655,6 @@ span.star-divider:after{
     width: 100%;
     }
 }
+
+
+/*--------------------------------------------------FIM Responsividade Mobile -----------------------------------------------------*/
