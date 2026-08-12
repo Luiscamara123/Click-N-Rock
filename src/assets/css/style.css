@@ -146,7 +146,7 @@ input#pesquisa{
     background-color: rgba(255, 255, 255, 0.801);
     border: 2px solid white;
     padding: 0 10px;
-    background-image: url('../imgPrincipal/search.png');
+    background-image: url('../img/icon/search.png');
     background-repeat: no-repeat;
     background-position: 1%;
     background-size: 30px; 
@@ -566,6 +566,7 @@ img.add-btn {
 }
 
 .cart-count {
+    color: white;
     position: absolute;
     top: -5px;
     right: -10px;
