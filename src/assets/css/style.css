@@ -398,9 +398,6 @@ footer{
     font-weight: bold;
     font-family: "Andika", sans-serif;
 }
-.dark h1, .dark h2,.dark h3,.dark p{
-    color: #b0b0b0;
-}
 .dark h1, .dark h2,.dark h3,.dark .footer_content{
     color:  rgb(255, 255, 255);
 }
@@ -636,7 +633,7 @@ button {
 
 .dark .cart-item {
     background: #333;
-    color: rgb(207, 207, 207);
+    color: rgb(231, 231, 231);
 }
 
 .cart-item img {
@@ -1209,6 +1206,9 @@ span.star-divider:after{
     color: black;
     margin-top: 20px;
 }
+#paginaProduto.dark .cart-header h2{
+    color: rgb(255, 255, 255);
+}
 #paginaProduto .product-info h2{
     margin: 50px;
     font-size: 40px;
@@ -1220,7 +1220,9 @@ span.star-divider:after{
   margin: 10px 0;
   color: #000000;
 }
-
+#paginaProduto.dark .product-info h2 {
+  color: #ffffff;
+}
 #paginaProduto .product-code {
   color: #777;
   font-size: 0.9rem;
