@@ -24,7 +24,7 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html"> Início </a>
+            <a class="nav-link active" href="index.php"> Início </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#servicos" id="servicosDropdown" role="button"
