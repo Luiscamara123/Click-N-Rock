@@ -16,7 +16,7 @@
   <!--Cabeçalho-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark px-3">
-      <a href="../../../../index.html"><img class="logo" src="../../../assets/img/icon/Logo.png"></a>
+      <a href="../../../../index.php"><img class="logo" src="../../../assets/img/icon/Logo.png"></a>
       <input type="text" id="pesquisa" placeholder="Digite o produto">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"> </span>
@@ -24,14 +24,14 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="../../../../index.html"> Início </a>
+            <a class="nav-link active" href="../../../../index.php"> Início </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#servicos" id="servicosDropdown" role="button"
               data-bs-toggle="dropdown"> Produtos </a>
             <ul class="dropdown-menu">
-              <li> <a class="dropdown-item" href="../../../../index.html#roupas"> Roupas </a></li>
-              <li> <a class="dropdown-item" href="../../../../index.html#acessorios"> Acessórios </a></li>
+              <li> <a class="dropdown-item" href="../../../../index.php#roupas"> Roupas </a></li>
+              <li> <a class="dropdown-item" href="../../../../index.php#acessorios"> Acessórios </a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="#contato"> Ajuda </a></li>
@@ -43,8 +43,8 @@
           <img width="40px" src="../../../assets/img/icon/icon-usuario.png">
         </button>
         <div class="dropdown-content">
-          <a href="../../login/index.html">Login</a>
-          <a href="../../cadastrar/index.html">Cadastrar</a>
+          <a href="../../login/index.php">Login</a>
+          <a href="../../cadastrar/index.php">Cadastrar</a>
         </div>
       </div>
       <div class="cart">
@@ -56,19 +56,19 @@
     <main class="container">
       <div class="product-details">
         <div class="product-gallery">
-          <img src="../../../assets/img/roupa/jaqueta4.jpg" alt="Fone de Ouvido Bluetooth" />
+          <img src="../../../assets/img/roupa/camiseta3.jpg" alt="Fone de Ouvido Bluetooth" />
         </div>
         <div class="product-info">
-          <h2 class="product-name">Jaqueta Jeans Iron Maiden</h2>
+          <h2 class="product-name">Camiseta ACDC colorida</h2>
           <p class="product-code">Código do Produto: 98765XYZ</p>
-          <p class="price">R$ <span>299,99</span></p>
+          <p class="price">R$ <span>69,99</span></p>
           <p class="rating">
             <i class="fas fa-star"></i><i class="fas fa-star"></i
             ><i class="fas fa-star"></i><i class="fas fa-star"></i
             ><i class="fas fa-star-half-alt"></i> 45 avaliações
           </p>
           <p class="product-description">
-           Jaqueta Jeans Oversize tem modelagem mais ampla, bem larga, folgada e mais comprida, com bolsos frontais, laterais e internos, cabe muita coisa. Por ser unissex confira as tabelas de medidas antes da compra.
+           Nossas camisetas são confeccionadas com malha de alta qualidade em vários padrões de cores e lavagens. As estampas são desenvolvidas por uma equipe de designers gráficos que transformam imagens, desenhos e artes em silk screen de excelente qualidade.
           </p>
           <div class="product-options">
             <label for="color">Cor:</label>
@@ -97,7 +97,7 @@
         </ul>
         <div class="specs-content">
           <div>
-            <p><strong>Material :</strong> Jeans e Elastano</p>
+            <p><strong>Material :</strong>50% Algodão e 50% Pollyester</p>
           </div>
         </div>
       </div>

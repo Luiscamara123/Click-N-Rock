@@ -1,28 +1,56 @@
-const botaoModoEscuro = document.getElementById("modoEscuro");
-const logoClaro = document.getElementById("logoClaro");
-const logoEscuro = document.getElementById("logoEscuro");
+/*  =======================================
+                MODO ESCURO
+===========================================  */
 
-if (botaoModoEscuro) {
-    botaoModoEscuro.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
+const toggleTema = document.getElementById('modoEscuro');
+const logoClaro = document.getElementById('logoClaro');
+const logoEscuro = document.getElementById('logoEscuro');
+const temaSalvo = localStorage.getItem('tema');
 
-        if (document.body.classList.contains("dark")) {
-            botaoModoEscuro.textContent = ' ☀️';
+// Função para aplicar o tema claro
+function aplicarTemaClaro() {
+    document.body.classList.add('dark');
+    if (toggleTema) toggleTema.textContent = '🌙';
+    if (logoClaro && logoEscuro) {
+        logoClaro.style.display = 'inline';
+        logoEscuro.style.display = 'none';
+    }
+}
 
-            if (logoClaro && logoEscuro) {
-                logoClaro.style.display = "none";
-                logoEscuro.style.display = "inline";
-            }
+// Função para aplicar o tema escuro
+function aplicarTemaEscuro() {
+    document.body.classList.remove('dark');
+    if (toggleTema) toggleTema.textContent = '☀️';
+    if (logoClaro && logoEscuro) {
+        logoClaro.style.display = 'none';
+        logoEscuro.style.display = 'inline';
+    }
+}
+
+// Carrega o tema salvo ao iniciar
+if (temaSalvo === 'claro') {
+    aplicarTemaClaro();
+} else {
+    aplicarTemaEscuro();
+}
+
+// Alterna o tema ao clicar no botão
+if (toggleTema) {
+    toggleTema.addEventListener('click', () => {
+        const eModoClaro = document.body.classList.contains('dark');
+
+        if (eModoClaro) {
+            aplicarTemaEscuro();
+            localStorage.setItem('tema', 'escuro');
         } else {
-            botaoModoEscuro.textContent = "🌙";
-
-            if (logoClaro && logoEscuro) {
-                logoClaro.style.display = "inline";
-                logoEscuro.style.display = "none";
-            }
+            aplicarTemaClaro();
+            localStorage.setItem('tema', 'claro');
         }
     });
 }
+/*  =========================================
+                FIM MODO ESCURO
+============================================= */
 
 let cart = [];
 

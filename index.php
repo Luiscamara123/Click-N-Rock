@@ -16,7 +16,7 @@
   <!--Cabeçalho-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark px-3">
-      <a href="index.html"><img class="logo" src="./src/assets/img/icon/Logo.png"></a>
+      <a href="index.php"><img class="logo" src="./src/assets/img/icon/Logo.png"></a>
       <input type="text" id="pesquisa" placeholder="Digite o produto">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"> </span>
@@ -24,7 +24,7 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html"> Início </a>
+            <a class="nav-link active" href="index.php"> Início </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#servicos" id="servicosDropdown" role="button"
@@ -43,8 +43,8 @@
           <img width="40px" src="./src/assets/img/icon/icon-usuario.png">
         </button>
         <div class="dropdown-content">
-          <a href="./src/pages/login/index.html">Login</a>
-          <a href="./src/pages/cadastrar/index.html">Cadastrar</a>
+          <a href="./src/pages/login/index.php">Login</a>
+          <a href="./src/pages/cadastrar/index.php">Cadastrar</a>
         </div>
       </div>
       <div class="cart">
@@ -98,7 +98,7 @@
                     <h3 class="product-name">Jaqueta Jeans Queen</h3>
                     <p class="product-price">R$ 299,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/jaqueta3.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/jaqueta3.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -110,7 +110,7 @@
                     <h3 class="product-name">Jaqueta Jeans Iron Maiden</h3>
                     <p class="product-price">R$ 299,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/jaqueta4.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/jaqueta4.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -122,7 +122,7 @@
                     <h3 class="product-name">Moletom Chorão</h3>
                     <p class="product-price">R$ 350,00</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/Moletom1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/Moletom1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -134,7 +134,7 @@
                     <h3 class="product-name">Moletom Deftones</h3>
                     <p class="product-price">R$ 320,00</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/Moletom2.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/Moletom2.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -146,7 +146,7 @@
                     <h3 class="product-name">Camiseta Kiss</h3>
                     <p class="product-price">R$ 70,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/camiseta-kiss1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/camiseta-kiss1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -162,7 +162,7 @@
                     <h3 class="product-name">Camiseta ACDC</h3>
                     <p class="product-price">R$ 79,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/camiseta2.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/camiseta2.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -174,7 +174,7 @@
                     <h3 class="product-name">Camiseta ACDC colorida</h3>
                     <p class="product-price">R$ 69,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/camiseta3.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/camiseta3.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -186,7 +186,7 @@
                     <h3 class="product-name">Camiseta Slipknot</h3>
                     <p class="product-price">R$ 79,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/camiseta4.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/camiseta4.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -198,7 +198,7 @@
                     <h3 class="product-name">Camiseta caveira</h3>
                     <p class="product-price">R$ 62,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/camiseta5.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/camiseta5.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -210,7 +210,7 @@
                     <h3 class="product-name"> Moletom Slipknot</h3>
                     <p class="product-price">R$ 350,00</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/moletom3.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/moletom3.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -226,7 +226,7 @@
                     <h3 class="product-name">Jaqueta Metallica</h3>
                     <p class="product-price">R$ 299,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/Jaqueta2.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/Jaqueta2.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -238,7 +238,7 @@
                     <h3 class="product-name">Jaqueta Slipknot</h3>
                     <p class="product-price">R$ 299,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/Jaqueta1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/Jaqueta1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -250,7 +250,7 @@
                     <h3 class="product-name">Moletom Nirvana</h3>
                     <p class="product-price">R$ 350,00</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/roupas/Moletom4.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/roupas/Moletom4.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -279,7 +279,7 @@
                 <h3 class="product-name">Jaqueta Jeans Queen</h3>
                 <p class="product-price">R$ 72,90</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/jaqueta3.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/jaqueta3.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -291,7 +291,7 @@
                 <h3 class="product-name">Jaqueta Jeans Iron Maiden</h3>
                 <p class="product-price">R$ 299,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/Jaqueta2.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/Jaqueta2.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -303,7 +303,7 @@
                 <h3 class="product-name">Jaqueta Jeans Iron Maiden</h3>
                 <p class="product-price">R$ 299,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/jaqueta4.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/jaqueta4.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -315,7 +315,7 @@
                 <h3 class="product-name">Jaqueta Slipknot</h3>
                 <p class="product-price">R$ 299,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/Jaqueta1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/Jaqueta1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -327,7 +327,7 @@
                 <h3 class="product-name">Camiseta Kiss</h3>
                 <p class="product-price">R$ 69,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/camiseta-kiss1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/camiseta-kiss1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -339,7 +339,7 @@
                 <h3 class="product-name">Camiseta da ACDC</h3>
                 <p class="product-price">R$ 79,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/camiseta2.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/camiseta2.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -351,7 +351,7 @@
                 <h3 class="product-name">Camiseta da ACDC colorida</h3>
                 <p class="product-price">R$ 69,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/camiseta3.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/camiseta3.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -363,7 +363,7 @@
                 <h3 class="product-name">Camiseta Slipknot</h3>
                 <p class="product-price">R$ 79,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/camiseta4.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/camiseta4.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -375,7 +375,7 @@
                 <h3 class="product-name">Camiseta caveira</h3>
                 <p class="product-price">R$ 72,90</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/camiseta5.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/camiseta5.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -387,7 +387,7 @@
                 <h3 class="product-name">Moletom Chorão</h3>
                 <p class="product-price">R$ 350,00</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/Moletom1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/Moletom1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -399,7 +399,7 @@
                 <h3 class="product-name">Moletom Deftones</h3>
                 <p class="product-price">R$ 320,00</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/Moletom2.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/Moletom2.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -411,7 +411,7 @@
                 <h3 class="product-name">Moletom Slipknot</h3>
                 <p class="product-price">R$ 72,90</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/moletom3.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/moletom3.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -423,7 +423,7 @@
                 <h3 class="product-name">Moletom Nirvana</h3>
                 <p class="product-price">R$ 350,00</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/roupas/Moletom4.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/roupas/Moletom4.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -455,7 +455,7 @@
                     <h3 class="product-name">Bandana</h3>
                     <p class="product-price">R$ 29,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/bandana1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/bandana1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -467,7 +467,7 @@
                     <h3 class="product-name">Bracelete Conjunto</h3>
                     <p class="product-price">R$ 12,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/bracelete1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/bracelete1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -479,7 +479,7 @@
                     <h3 class="product-name">Brinco Spike</h3>
                     <p class="product-price">R$ 9,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/brinco1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/brinco1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -491,7 +491,7 @@
                     <h3 class="product-name">Cinto Pirâmide</h3>
                     <p class="product-price">R$ 49,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/cinto1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/cinto1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -503,7 +503,7 @@
                     <h3 class="product-name">Caneca Banda Metallica</h3>
                     <p class="product-price">R$ 59,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/caneca1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/caneca1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -519,7 +519,7 @@
                     <h3 class="product-name">Chaveiro Aternativo</h3>
                     <p class="product-price">R$ 22,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/Chaveiro1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/Chaveiro1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -531,7 +531,7 @@
                     <h3 class="product-name">Colar Spike</h3>
                     <p class="product-price">R$ 30,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/Colar1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/Colar1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -543,7 +543,7 @@
                     <h3 class="product-name">Corrente Gótica Caveira</h3>
                     <p class="product-price">R$ 19,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/Corrente1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/Corrente1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -555,7 +555,7 @@
                     <h3 class="product-name">Sapato Plataforma New Rock - Preto</h3>
                     <p class="product-price">R$ 699,00</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/newrocks.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/newrocks.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -567,7 +567,7 @@
                     <h3 class="product-name">Vinil</h3>
                     <p class="product-price">R$ 52,90</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/Vinil1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/Vinil1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -583,7 +583,7 @@
                     <h3 class="product-name">All Star converse preto</h3>
                     <p class="product-price">R$ 249,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/allstar1.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/allstar1.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -595,7 +595,7 @@
                     <h3 class="product-name">All Star Converse Vermelho</h3>
                     <p class="product-price">R$ 249,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/allstar2.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/allstar2.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -607,7 +607,7 @@
                     <h3 class="product-name">All Star Converse Branco</h3>
                     <p class="product-price">R$ 249,99</p>
                     <div class="ajuste-carrinho">
-                      <a href="./src/pages/paginaProdutos/acessorios/allstar3.html"><button class="button-card"
+                      <a href="./src/pages/paginaProdutos/acessorios/allstar3.php"><button class="button-card"
                           type="submit">Comprar</button></a>
                       <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                     </div>
@@ -636,7 +636,7 @@
                 <h3 class="product-name">All Star converse preto</h3>
                 <p class="product-price">R$ 249,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/allstar1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/allstar1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -648,7 +648,7 @@
                 <h3 class="product-name">All Star Converse Vermelho</h3>
                 <p class="product-price">R$ 249,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/allstar2.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/allstar2.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -660,7 +660,7 @@
                 <h3 class="product-name">All Star Converse Branco</h3>
                 <p class="product-price">R$ 249,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/allstar3.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/allstar3.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -672,7 +672,7 @@
                 <h3 class="product-name">Bandana</h3>
                 <p class="product-price">R$ 29,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/bandana1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/bandana1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -684,7 +684,7 @@
                 <h3 class="product-name">Bracelete Conjunto</h3>
                 <p class="product-price">R$ 12,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/bracelete1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/bracelete1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -696,7 +696,7 @@
                 <h3 class="product-name">Brinco Spike</h3>
                 <p class="product-price">R$ 9,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/brinco1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/brinco1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -708,7 +708,7 @@
                 <h3 class="product-name">Caneca Banda Metallica</h3>
                 <p class="product-price">R$ 59,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/caneca1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/caneca1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -720,7 +720,7 @@
                 <h3 class="product-name">Chaveiro Aternativo</h3>
                 <p class="product-price">R$ 22,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/Chaveiro1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/Chaveiro1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -732,7 +732,7 @@
                 <h3 class="product-name">Cinto Pirâmide</h3>
                 <p class="product-price">R$ 49,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/cinto1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/cinto1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -744,7 +744,7 @@
                 <h3 class="product-name">Colar Spike</h3>
                 <p class="product-price">R$ 30,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/Colar1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/Colar1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -756,7 +756,7 @@
                 <h3 class="product-name">Corrente Gótica Caveira</h3>
                 <p class="product-price">R$ 19,99</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/Corrente1.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/Corrente1.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>
@@ -768,7 +768,7 @@
                 <h3 class="product-name">Sapato Plataforma New Rock - Preto</h3>
                 <p class="product-price">R$ 699,00</p>
                 <div class="ajuste-carrinho">
-                  <a href="./src/pages/paginaProdutos/acessorios/newrocks.html"><button class="button-card"
+                  <a href="./src/pages/paginaProdutos/acessorios/newrocks.php"><button class="button-card"
                       type="submit">Comprar</button></a>
                   <img src="./src/assets/img/icon/carrinho-card.png" class="add-btn">
                 </div>

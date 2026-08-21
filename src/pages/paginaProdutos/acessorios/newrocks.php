@@ -15,7 +15,7 @@
   <!--Cabeçalho-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark px-3">
-      <a href="../../../../index.html"><img class="logo" src="../../../assets/img/icon/Logo.png"></a>
+      <a href="../../../../index.php"><img class="logo" src="../../../assets/img/icon/Logo.png"></a>
       <input type="text" id="pesquisa" placeholder="Digite o produto">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"> </span>
@@ -23,14 +23,14 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="../../../../index.html"> Início </a>
+            <a class="nav-link active" href="../../../../index.php"> Início </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#servicos" id="servicosDropdown" role="button"
               data-bs-toggle="dropdown"> Produtos </a>
             <ul class="dropdown-menu">
-              <li> <a class="dropdown-item" href="../../../../index.html#roupas"> Roupas </a></li>
-              <li> <a class="dropdown-item" href="../../../../index.html#acessorios"> Acessórios </a></li>
+              <li> <a class="dropdown-item" href="../../../../index.php#roupas"> Roupas </a></li>
+              <li> <a class="dropdown-item" href="../../../../index.php#acessorios"> Acessórios </a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="#contato"> Ajuda </a></li>
@@ -42,8 +42,8 @@
           <img width="40px" src="../../../assets/img/icon/icon-usuario.png">
         </button>
         <div class="dropdown-content">
-          <a href="../../login/index.html">Login</a>
-          <a href="../../cadastrar/index.html">Cadastrar</a>
+          <a href="../../login/index.php">Login</a>
+          <a href="../../cadastrar/index.php">Cadastrar</a>
         </div>
       </div>
       <div class="cart">

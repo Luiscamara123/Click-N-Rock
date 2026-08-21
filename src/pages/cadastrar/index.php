@@ -13,7 +13,7 @@
 <body id="paginaCadastro">
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark px-3">
-      <a href="../../../index.html"><img class="logo" src="../../assets/img/icon/Logo.png"></a>
+      <a href="../../../index.php"><img class="logo" src="../../assets/img/icon/Logo.png"></a>
       <input type="search" id="pesquisa" placeholder="Digite o produto">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"> </span>
@@ -21,17 +21,17 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="../../../index.html"> Início </a>
+            <a class="nav-link active" href="../../../index.php"> Início </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="produtosDropdown" role="button" data-bs-toggle="dropdown"> Produtos </a>
             <ul class="dropdown-menu">
-              <li> <a class="dropdown-item" href="../../../index.html#roupas"> Roupas </a></li>
-              <li> <a class="dropdown-item" href="../../../index.html#acessorios"> Acessórios </a></li>
+              <li> <a class="dropdown-item" href="../../../index.php#roupas"> Roupas </a></li>
+              <li> <a class="dropdown-item" href="../../../index.php#acessorios"> Acessórios </a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="../../../index.html#contato"> Ajuda </a></li>
-          <li class="nav-item"><a class="nav-link" href="../../../index.html#contato"> Contato </a></li>
+          <li class="nav-item"><a class="nav-link" href="../../../index.php#contato"> Ajuda </a></li>
+          <li class="nav-item"><a class="nav-link" href="../../../index.php#contato"> Contato </a></li>
         </ul>
       </div>
     </nav>
@@ -57,7 +57,7 @@
             </form>
             <div class="signup">
                 <span class="signup">Já tem uma conta?
-                    <a href="../login/index.html"><label>Login</label></a>
+                    <a href="../login/index.php"><label>Login</label></a>
                 </span>
             </div>
         </div>
