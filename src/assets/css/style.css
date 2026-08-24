@@ -446,9 +446,9 @@ footer{
     display: flex;
 }
 .card{
-    height: 300px !important; 
-    width: 200px !important;
-    margin: 5px !important;
+    height: 180px !important; 
+    width: auto;
+    margin: 0 !important;
     background-color: white !important;
     border-radius: 15px !important;
     border: 2px solid black !important;
@@ -2240,3 +2240,4 @@ input {
         display: none;
     }
 }
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
