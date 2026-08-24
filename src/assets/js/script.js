@@ -240,11 +240,7 @@ const headerAvatar = document.getElementById("headerAvatar");
 const headerUserName = document.getElementById("headerUserName");
 const dashboard = document.getElementById("dashboard");
 const logoutScreen = document.getElementById("logoutScreen");
-const logoutModal = document.getElementById("logoutModal");
-const confirmEmail = document.getElementById("confirmEmail");
-const confirmSenha = document.getElementById("confirmSenha");
-const modalError = document.getElementById("modalError");
-const menuButtons = document.querySelectorAll("#meu-painel .menu button");
+const menuButtons = document.querySelectorAll(".menu button");
 
 /* =====================================================
    FUNÇÕES AUXILIARES
@@ -544,36 +540,11 @@ menuButtons.forEach(button => {
     });
 });
 
-// Abrir o modal ao clicar no botão Sair
 document.getElementById("logoutButton").addEventListener("click", () => {
-    confirmEmail.value = "";
-    confirmSenha.value = "";
-    modalError.style.display = "none";
-    logoutModal.style.display = "flex";
-});
-
-// Fechar o modal
-document.getElementById("cancelLogoutButton").addEventListener("click", () => {
-    logoutModal.style.display = "none";
-});
-
-// Confirmar o e-mail e a senha antes de sair
-document.getElementById("confirmLogoutButton").addEventListener("click", () => {
-    const emailDigitado = confirmEmail.value.trim();
-    const senhaDigitada = confirmSenha.value.trim();
-
-    if (emailDigitado !== usuario.email || senhaDigitada !== usuario.senha) {
-        modalError.textContent = "✕ E-mail ou senha incorretos!";
-        modalError.style.display = "block";
-        return;
-    }
-
-    logoutModal.style.display = "none";
     dashboard.style.display = "none";
     logoutScreen.style.display = "flex";
 });
 
-// Voltar para a conta a partir da tela de confirmação
 document.getElementById("returnButton").addEventListener("click", () => {
     logoutScreen.style.display = "none";
     dashboard.style.display = "flex";
