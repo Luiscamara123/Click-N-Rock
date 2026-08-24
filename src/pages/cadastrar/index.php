@@ -40,19 +40,19 @@
         <div class="registration form">
             <header class="login_tittle">Cadastrar-se</header>
             <form action="GET">
-                <input type="text" placeholder="Insira seu nome completo">
-                <input type="date" placeholder="Digite sua data de nascimento">
+                <input name="nomeCompleto" type="text" placeholder="Insira seu nome completo">
+                <input name="nascimento" type="date" placeholder="Digite sua data de nascimento">
                 <label for="genero" class="genero">Gênero</label>
                 <select name="genero">
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="prefiro-não-dizer">Prefiro não dizer</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Feminino">Feminino</option>
+                  <option value="Prefiro não dizer">Prefiro não dizer</option>
                 </select>
-                <input type="number" placeholder="Digite seu CPF">
-                <input type="text" placeholder="Insira seu CEP">
-                <input type="email" placeholder="Insira seu email">
-                <input type="password" placeholder="Crie uma senha">
-                <input type="password" placeholder="Confirme sua senha">
+                <input name="cpf" type="number" placeholder="Digite seu CPF">
+                <input name="cep" type="text" placeholder="Insira seu CEP">
+                <input name="email" type="email" placeholder="Insira seu email">
+                <input name="senha" type="password" placeholder="Crie uma senha">
+                <input name="confirmaSenha" type="password" placeholder="Confirme sua senha">
                 <input type="button" class="button" value="Cadastrar-se">
             </form>
             <div class="signup">
