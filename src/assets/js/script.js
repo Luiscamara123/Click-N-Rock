@@ -215,12 +215,10 @@ function checkout(){
     showSuccessModal();
     cart = [];
     updateCart();
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+};
 
 /* =====================================================
-   DADOS INICIAIS E GERENCIAMENTO DE SESSÃO
+   DADOS INICIAIS E VARIÁVEIS DE SESSÃO
 ===================================================== */
 const dadosIniciais = {
     nome: "João Silva",
@@ -230,7 +228,7 @@ const dadosIniciais = {
     senha: "123456"
 };
 
-let usuario = JSON.parse(localStorage.getItem("clickRockUsuario")) || { ...dadosIniciais };
+let usuario = JSON.parse(localStorage.getItem("rockStoreUsuario")) || { ...dadosIniciais };
 
 /* =====================================================
    ELEMENTOS DOM
@@ -242,7 +240,11 @@ const headerAvatar = document.getElementById("headerAvatar");
 const headerUserName = document.getElementById("headerUserName");
 const dashboard = document.getElementById("dashboard");
 const logoutScreen = document.getElementById("logoutScreen");
-const menuButtons = document.querySelectorAll(".menu button");
+const logoutModal = document.getElementById("logoutModal");
+const confirmEmail = document.getElementById("confirmEmail");
+const confirmSenha = document.getElementById("confirmSenha");
+const modalError = document.getElementById("modalError");
+const menuButtons = document.querySelectorAll("#meu-painel .menu button");
 
 /* =====================================================
    FUNÇÕES AUXILIARES
@@ -255,7 +257,7 @@ function getInitials(nome) {
 }
 
 function salvarUsuario() {
-    localStorage.setItem("clickRockUsuario", JSON.stringify(usuario));
+    localStorage.setItem("rockStoreUsuario", JSON.stringify(usuario));
 }
 
 function atualizarCabecalho() {
@@ -346,13 +348,13 @@ function salvarSenha() {
 function renderPagina(pagina) {
     if (pagina === "inicio") {
         pageTitle.textContent = `Olá, ${usuario.nome.split(" ")[0]}! 🤘`;
-        pageDescription.textContent = "Bem-vindo ao seu painel da Click Rock.";
+        pageDescription.textContent = "Bem-vindo de volta à Rock Store.";
 
         pageContent.innerHTML = `
             <section class="cards">
                 <div class="card">
                     <div class="card-top">
-                        <span class="card-title">Pedidos Totais</span>
+                        <span class="card-title">Pedidos</span>
                         <span class="card-icon">📦</span>
                     </div>
                     <div class="card-number">3</div>
@@ -361,45 +363,45 @@ function renderPagina(pagina) {
 
                 <div class="card">
                     <div class="card-top">
-                        <span class="card-title">A Caminho</span>
+                        <span class="card-title">Em andamento</span>
                         <span class="card-icon">🚚</span>
                     </div>
                     <div class="card-number">1</div>
-                    <div class="card-description">enviado para entrega</div>
+                    <div class="card-description">pedido a caminho</div>
                 </div>
             </section>
 
             <div class="panel">
                 <div class="panel-header">
-                    <h2>Últimos Pedidos</h2>
+                    <h2>Pedidos recentes</h2>
                     <span>3 pedidos</span>
                 </div>
 
                 <div class="order">
-                    <div class="order-icon">👕</div>
+                    <div class="order-icon">🎸</div>
                     <div class="order-info">
-                        <div class="order-name">Camiseta ACDC</div>
-                        <div class="order-number">Pedido #1024 · R$ 79,99</div>
+                        <div class="order-name">Colar Rock 'n' Roll</div>
+                        <div class="order-number">Pedido #1024</div>
                     </div>
-                    <span class="status">Entregue 🛒</span>
+                    <span class="status">Entregue</span>
+                </div>
+
+                <div class="order">
+                    <div class="order-icon">🖤</div>
+                    <div class="order-info">
+                        <div class="order-name">Pulseira de couro</div>
+                        <div class="order-number">Pedido #1018</div>
+                    </div>
+                    <span class="status">Enviado</span>
                 </div>
 
                 <div class="order">
                     <div class="order-icon">💀</div>
                     <div class="order-info">
-                        <div class="order-name">Camiseta Slipknot Skull</div>
-                        <div class="order-number">Pedido #1018 · R$ 79,99</div>
+                        <div class="order-name">Anel Caveira</div>
+                        <div class="order-number">Pedido #1009</div>
                     </div>
-                    <span class="status">Enviado 🛒</span>
-                </div>
-
-                <div class="order">
-                    <div class="order-icon">🧥</div>
-                    <div class="order-info">
-                        <div class="order-name">Moletom Slipknot</div>
-                        <div class="order-number">Pedido #1009 · R$ 350,00</div>
-                    </div>
-                    <span class="status">Entregue 🛒</span>
+                    <span class="status">Entregue</span>
                 </div>
             </div>
         `;
@@ -408,40 +410,40 @@ function renderPagina(pagina) {
 
     if (pagina === "pedidos") {
         pageTitle.textContent = "Meus pedidos 📦";
-        pageDescription.textContent = "Acompanhe suas compras de vestuário e acessórios.";
+        pageDescription.textContent = "Acompanhe seus pedidos na Rock Store.";
 
         pageContent.innerHTML = `
             <div class="panel">
                 <div class="panel-header">
-                    <h2>Histórico de compras</h2>
+                    <h2>Meus pedidos</h2>
                     <span>3 pedidos</span>
                 </div>
 
                 <div class="order">
-                    <div class="order-icon">👕</div>
+                    <div class="order-icon">🎸</div>
                     <div class="order-info">
-                        <div class="order-name">Camiseta ACDC</div>
-                        <div class="order-number">#1024 · R$ 79,99</div>
+                        <div class="order-name">Colar Rock 'n' Roll</div>
+                        <div class="order-number">#1024 · R$ 89,90</div>
                     </div>
-                    <span class="status">Entregue 🛒</span>
+                    <span class="status">Entregue</span>
+                </div>
+
+                <div class="order">
+                    <div class="order-icon">🖤</div>
+                    <div class="order-info">
+                        <div class="order-name">Pulseira de couro</div>
+                        <div class="order-number">#1018 · R$ 59,90</div>
+                    </div>
+                    <span class="status">Enviado</span>
                 </div>
 
                 <div class="order">
                     <div class="order-icon">💀</div>
                     <div class="order-info">
-                        <div class="order-name">Camiseta Slipknot Skull</div>
-                        <div class="order-number">#1018 · R$ 79,99</div>
+                        <div class="order-name">Anel Caveira</div>
+                        <div class="order-number">#1009 · R$ 79,90</div>
                     </div>
-                    <span class="status">Enviado 🛒</span>
-                </div>
-
-                <div class="order">
-                    <div class="order-icon">🧥</div>
-                    <div class="order-info">
-                        <div class="order-name">Moletom Slipknot</div>
-                        <div class="order-number">#1009 · R$ 350,00</div>
-                    </div>
-                    <span class="status">Entregue 🛒</span>
+                    <span class="status">Entregue</span>
                 </div>
             </div>
         `;
@@ -450,7 +452,7 @@ function renderPagina(pagina) {
 
     if (pagina === "perfil") {
         pageTitle.textContent = "Meu perfil 👤";
-        pageDescription.textContent = "Atualize suas informações para envio e contato.";
+        pageDescription.textContent = "Altere suas informações pessoais.";
 
         pageContent.innerHTML = `
             <div class="panel profile">
@@ -460,12 +462,12 @@ function renderPagina(pagina) {
                     </div>
                     <div>
                         <h2 class="profile-name" id="profileName">${usuario.nome}</h2>
-                        <p class="profile-description">Membro Click Rock</p>
+                        <p class="profile-description">Cliente da Rock Store</p>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label>Nome Completo</label>
+                    <label>Nome</label>
                     <input id="nomeInput" type="text" value="${usuario.nome}">
                 </div>
 
@@ -475,17 +477,17 @@ function renderPagina(pagina) {
                 </div>
 
                 <div class="form-group">
-                    <label>Telefone / WhatsApp</label>
+                    <label>Telefone</label>
                     <input id="telefoneInput" type="text" value="${usuario.telefone}">
                 </div>
 
                 <div class="form-group">
-                    <label>Cidade / Estado</label>
+                    <label>Cidade</label>
                     <input id="cidadeInput" type="text" value="${usuario.cidade}">
                 </div>
 
                 <button class="save-button" id="saveProfileButton">
-                    Salvar Dados
+                    Salvar alterações
                 </button>
 
                 <div class="success-message" id="successMessage">
@@ -500,26 +502,26 @@ function renderPagina(pagina) {
 
     if (pagina === "configuracoes") {
         pageTitle.textContent = "Configurações ⚙️";
-        pageDescription.textContent = "Altere suas credenciais de acesso.";
+        pageDescription.textContent = "Gerencie sua conta e segurança.";
 
         pageContent.innerHTML = `
             <div class="panel profile">
                 <div class="panel-header">
-                    <h2>Segurança da Conta</h2>
+                    <h2>Alterar senha</h2>
                 </div>
 
                 <div class="form-group">
-                    <label>Senha Atual</label>
+                    <label>Senha atual</label>
                     <input id="senhaAtual" type="password" placeholder="Digite sua senha atual">
                 </div>
 
                 <div class="form-group">
-                    <label>Nova Senha</label>
+                    <label>Nova senha</label>
                     <input id="novaSenha" type="password" placeholder="Digite sua nova senha">
                 </div>
 
                 <button class="save-button" id="saveSenhaButton">
-                    Atualizar Senha
+                    Atualizar senha
                 </button>
 
                 <div class="success-message" id="senhaMessage"></div>
@@ -542,11 +544,36 @@ menuButtons.forEach(button => {
     });
 });
 
+// Abrir o modal ao clicar no botão Sair
 document.getElementById("logoutButton").addEventListener("click", () => {
+    confirmEmail.value = "";
+    confirmSenha.value = "";
+    modalError.style.display = "none";
+    logoutModal.style.display = "flex";
+});
+
+// Fechar o modal
+document.getElementById("cancelLogoutButton").addEventListener("click", () => {
+    logoutModal.style.display = "none";
+});
+
+// Confirmar o e-mail e a senha antes de sair
+document.getElementById("confirmLogoutButton").addEventListener("click", () => {
+    const emailDigitado = confirmEmail.value.trim();
+    const senhaDigitada = confirmSenha.value.trim();
+
+    if (emailDigitado !== usuario.email || senhaDigitada !== usuario.senha) {
+        modalError.textContent = "✕ E-mail ou senha incorretos!";
+        modalError.style.display = "block";
+        return;
+    }
+
+    logoutModal.style.display = "none";
     dashboard.style.display = "none";
     logoutScreen.style.display = "flex";
 });
 
+// Voltar para a conta a partir da tela de confirmação
 document.getElementById("returnButton").addEventListener("click", () => {
     logoutScreen.style.display = "none";
     dashboard.style.display = "flex";

@@ -1725,22 +1725,30 @@ span.star-divider:after{
 /* =====================================================
    CONFIGURAÇÕES GERAIS - ESTILO PRATA / BRANCO / VERDE
 ===================================================== */
-#meu-painel * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#meu-painel {
+body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(180deg, #e2e2e2 0%, #b8b8b8 100%);
     color: #1a1a1a;
     min-height: 100vh;
 }
 
-#meu-painel button,
-#meu-painel input {
+button,
+input {
     font-family: inherit;
+}
+
+/* =====================================================
+   CONTAINER DO PAINEL
+===================================================== */
+#meu-painel {
+    width: 100%;
+    min-height: 100vh;
 }
 
 /* =====================================================
@@ -2077,6 +2085,7 @@ span.star-divider:after{
 
 #meu-painel .form-group {
     margin-bottom: 18px;
+    text-align: left;
 }
 
 #meu-painel .form-group label {
@@ -2105,7 +2114,7 @@ span.star-divider:after{
     background: #fff;
 }
 
-#meu-painel .save-button, 
+#meu-painel .save-button,
 #meu-painel .return-button {
     padding: 12px 24px;
     border: 2px solid #000000;
@@ -2116,10 +2125,10 @@ span.star-divider:after{
     font-size: 14px;
     cursor: pointer;
     transition: 0.2s;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#meu-painel .save-button:hover, 
+#meu-painel .save-button:hover,
 #meu-painel .return-button:hover {
     background: #236327;
 }
@@ -2134,6 +2143,95 @@ span.star-divider:after{
     color: #2e7d32;
     font-size: 13px;
     font-weight: bold;
+}
+
+/* =====================================================
+   MODAL DE CONFIRMAÇÃO DE SAÍDA
+===================================================== */
+#meu-painel .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+}
+
+#meu-painel .modal-box {
+    width: 380px;
+    padding: 30px;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+#meu-painel .modal-box h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+#meu-painel .modal-box p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#meu-painel .modal-error {
+    display: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #ffebee;
+    border: 1px solid #c62828;
+    color: #c62828;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#meu-painel .modal-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#meu-painel .cancel-button {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#meu-painel .cancel-button:hover {
+    background: #f0f0f0;
+}
+
+#meu-painel .confirm-button {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background: #c62828;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#meu-painel .confirm-button:hover {
+    background: #b71c1c;
 }
 
 /* =====================================================
@@ -2154,7 +2252,7 @@ span.star-divider:after{
     border-radius: 16px;
     background: #ffffff;
     text-align: center;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 #meu-painel .logout-icon {

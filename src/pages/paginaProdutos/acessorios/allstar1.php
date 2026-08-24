@@ -58,7 +58,7 @@
         <img src="../../../assets/img/acessorios/All star1.jpg" alt="All star" />
       </div>
       <div class="product-info">
-        <h2 class="product-name">All Star converse preto</h2>
+        <h2 class="product-name" value="All Star converse preto">All Star converse preto</h2>
         <p class="product-code">Código do Produto: 98765XYZ</p>
         <p class="price">R$ <span>249,99</span></p>
         <p class="rating">
