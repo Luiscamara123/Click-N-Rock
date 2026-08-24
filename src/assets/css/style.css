@@ -446,9 +446,9 @@ footer{
     display: flex;
 }
 .card{
-    height: 180px !important; 
-    width: auto;
-    margin: 0 !important;
+    height: 300px !important; 
+    width: 200px !important;
+    margin: 5px !important;
     background-color: white !important;
     border-radius: 15px !important;
     border: 2px solid black !important;
@@ -1769,7 +1769,7 @@ input {
     top: 0;
     left: 0;
     padding: 25px 15px;
-    background: #ffffff;
+    background: #9c9b9b;
     border-right: 2px solid #000000;
     box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.05);
     z-index: 10;
@@ -1816,7 +1816,7 @@ input {
 }
 
 #meu-painel .menu button.active {
-    background: #2e7d32;
+    background-color:  rgb(206, 13, 2);
     color: white;
     border-color: #000000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
@@ -1893,7 +1893,7 @@ input {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background: #2e7d32;
+    background: #a80000;
     color: white;
     display: flex;
     align-items: center;
@@ -2060,7 +2060,7 @@ input {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background: #2e7d32;
+    background: #ac0000;
     color: white;
     display: flex;
     align-items: center;
