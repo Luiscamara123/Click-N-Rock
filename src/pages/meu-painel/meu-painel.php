@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Store - Minha Conta</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
+     <link rel="stylesheet" href="../../assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body id="meu-painel">
 
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark px-3">
-      <a href="index.php"><img class="logo" src="../../assets/img/icon/Logo.png"></a>
+      <a href="../../../index.php"><img class="logo" src="../../assets/img/icon/Logo.png"></a>
       <input type="text" id="pesquisa" placeholder="Digite o produto">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"> </span>
@@ -39,15 +41,15 @@
           <img width="40px" src="../../assets/img/icon/icon-usuario.png">
         </button>
         <div class="dropdown-content">
-          <a href="../../pages/login/index.php">Login</a>
-          <a href="../../pages/cadastrar/index.php">Cadastrar</a>
+          <a href="../login/index.php">Login</a>
+          <a href="../cadastrar/index.php">Cadastrar</a>
         </div>
       </div>
       <div class="cart">
-        <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png">
+        <img class="icon-carrinho" width="40px" src="https://cdn-icons-png.flaticon.com/512/263/263142.png">
         <div class="cart-count icon-carrinho" id="cartCount">0</div>
       </div>
-    </nav>  
+    </nav>
   </header>
 
     <!-- DASHBOARD -->
@@ -55,10 +57,6 @@
 
         <!-- SIDEBAR -->
         <aside class="sidebar">
-            <div class="logo">
-                <img class="img-logo" src="../../assets/img/icon/logo.png">
-            </div>
-
             <nav class="menu">
                 <button class="active" data-page="inicio">
                     🏠 &nbsp; Início
@@ -119,7 +117,7 @@
   <footer id="contato">
     <div id="footer_content">
       <div id="footer_contacts">
-        <img class="logo" src="./src/assets/img/icon/Logo.png">
+        <img class="logo" src="../../assets/img/icon/Logo.png">
         <ul class="footer-list">
           <li>
             <a href="#" class="footer-link">Ana Moura</a>
@@ -193,6 +191,7 @@
   </footer>
 
     <script src="../../assets/js/script.js"></script>
+  <script src="../../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
