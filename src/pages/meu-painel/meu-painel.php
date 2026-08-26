@@ -113,6 +113,86 @@
         </div>
     </div>
 
+    <!--Modo Escuro-->
+    <button id="modoEscuro">🌙</button>
+
+    <!--Footer-->
+  <footer id="contato">
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <img class="logo" src="./src/assets/img/icon/Logo.png">
+        <ul class="footer-list">
+          <li>
+            <a href="#" class="footer-link">Ana Moura</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Bryan Willian</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Luís Câmara</a>
+          </li>
+          <div id="footer_social_media">
+            <a href="#" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-link" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </ul>
+      </div>
+      <ul class="footer-list">
+        <li>
+          <h3>Conta</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Meus pedidos</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Rastrear pedido</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Área do revendedor</a>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h3>Ajuda</h3>
+        </li>
+        <li><a href="#" class="footer-link">FAQ</a></li>
+        <li><a href="#" class="footer-link">Troca e devoluções</a></li>
+        <a href="#" class="footer-link">Entre em contato</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Termos e condições</a>
+        </li>
+        <li>
+        <li>
+          <a href="#" class="footer-link">Política de privacidade</a>
+        </li>
+      </ul>
+      <div id="footer_subscribe">
+        <h3>Inscrever-se</h3>
+        <p>
+          Insira seu e-mail para receber notificações sobre nossas novidades:
+        </p>
+        <div id="input_group">
+          <input type="email" id="email">
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="footer_copyright">
+      &#169
+      2025 all copyright reserved.
+    </div>
+  </footer>
+
     <script src="../../assets/js/script.js"></script>
 </body>
 
