@@ -1928,6 +1928,7 @@ input {
 
 #meu-painel .card,
 #meu-painel .panel {
+    width: 500px !important;
     padding: 24px;
     background: #ffffff;
     border: 2px solid #000000;
@@ -1984,6 +1985,10 @@ input {
     color: #666;
     font-size: 12px;
     font-weight: bold;
+}
+
+#meu-painel img.img-logo {
+    width: 90px;
 }
 
 /* =====================================================

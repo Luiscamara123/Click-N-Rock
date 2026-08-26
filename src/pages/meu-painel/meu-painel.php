@@ -57,7 +57,7 @@
         <!-- SIDEBAR -->
         <aside class="sidebar">
             <div class="logo">
-                <span>⚡</span> CLICK N ROCK
+                <img class="img-logo" src="../../assets/img/icon/logo.png">
             </div>
 
             <nav class="menu">
