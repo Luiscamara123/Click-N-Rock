@@ -105,7 +105,7 @@ div#navbarNav {
 
 /*(Modo escuro do navbar)*/
 .dark .navbar, .navbar{
-    height: 140px;
+    height: 90px;
     top: 0;
     width: 100%;
     z-index: 9;
@@ -1649,6 +1649,7 @@ span.star-divider:after{
     .dark .navbar-produtos, .navbar{
         height: 90px;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1675,6 +1676,11 @@ span.star-divider:after{
         width: 50px;
         margin-left: 0;
     }
+
+    .dark .navbar, .navbar{
+        height: 140px;
+    }
+
     input#pesquisa {
         width: auto;
     }
