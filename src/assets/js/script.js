@@ -344,7 +344,7 @@ function salvarSenha() {
 function renderPagina(pagina) {
     if (pagina === "inicio") {
         pageTitle.textContent = `Olá, ${usuario.nome.split(" ")[0]}! 🤘`;
-        pageDescription.textContent = "Bem-vindo de volta à Rock Store.";
+        pageDescription.textContent = "Bem-vindo de volta à Click N Rock.";
 
         pageContent.innerHTML = `
             <section class="cards">
@@ -406,7 +406,7 @@ function renderPagina(pagina) {
 
     if (pagina === "pedidos") {
         pageTitle.textContent = "Meus pedidos 📦";
-        pageDescription.textContent = "Acompanhe seus pedidos na Rock Store.";
+        pageDescription.textContent = "Acompanhe seus pedidos na Click N Rock.";
 
         pageContent.innerHTML = `
             <div class="panel">
