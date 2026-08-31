@@ -1803,7 +1803,22 @@ input {
 #meu-painel .logo span {
     color: #2e7d32;
 }
-
+#meu-painel img.icons-meuPainel{
+    margin: 0px 7px 3px 5px;
+    height: 20px;
+}
+#meu-painel img.icons-meuPainel-logout{
+    margin: 0px 7px 3px 5px;
+    height: 20px;
+}
+.dark#meu-painel img.icons-meuPainel{
+    filter: invert();
+}
+span.card-icon{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #ffa20030;
+}
 #meu-painel .menu {
     display: flex;
     flex-direction: column;

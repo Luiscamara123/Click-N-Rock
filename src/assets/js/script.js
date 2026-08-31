@@ -343,7 +343,7 @@ function salvarSenha() {
 ===================================================== */
 function renderPagina(pagina) {
     if (pagina === "inicio") {
-        pageTitle.textContent = `Olá, ${usuario.nome.split(" ")[0]}! 🤘`;
+        pageTitle.textContent = `Olá, ${usuario.nome.split(" ")[0]}! `;
         pageDescription.textContent = "Bem-vindo de volta à Click N Rock.";
 
         pageContent.innerHTML = `
@@ -405,7 +405,7 @@ function renderPagina(pagina) {
     }
 
     if (pagina === "pedidos") {
-        pageTitle.textContent = "Meus pedidos 📦";
+        pageTitle.textContent = "Meus pedidos";
         pageDescription.textContent = "Acompanhe seus pedidos na Click N Rock.";
 
         pageContent.innerHTML = `
@@ -447,7 +447,7 @@ function renderPagina(pagina) {
     }
 
     if (pagina === "perfil") {
-        pageTitle.textContent = "Meu perfil 👤";
+        pageTitle.textContent = "Meu perfil";
         pageDescription.textContent = "Altere suas informações pessoais.";
 
         pageContent.innerHTML = `
@@ -497,7 +497,7 @@ function renderPagina(pagina) {
     }
 
     if (pagina === "configuracoes") {
-        pageTitle.textContent = "Configurações ⚙️";
+        pageTitle.textContent = "Configurações";
         pageDescription.textContent = "Gerencie sua conta e segurança.";
 
         pageContent.innerHTML = `

@@ -59,21 +59,21 @@
         <aside class="sidebar">
             <nav class="menu">
                 <button class="active" data-page="inicio">
-                    🏠 &nbsp; Início
+                    <img class="icons-meuPainel"src="../../assets/img/icon/home.png"> Início
                 </button>
                 <button data-page="pedidos">
-                    📦 &nbsp; Meus pedidos
+                    <img class="icons-meuPainel"src="../../assets/img/icon/box.png"> Meus pedidos
                 </button>
                 <button data-page="perfil">
-                    👤 &nbsp; Meu perfil
+                    <img class="icons-meuPainel"src="../../assets/img/icon/user.png"> Meu perfil
                 </button>
                 <button data-page="configuracoes">
-                    ⚙️ &nbsp; Configurações
+                    <img class="icons-meuPainel"src="../../assets/img/icon/setting.png"> Configurações
                 </button>
             </nav>
 
             <button class="logout" id="logoutButton">
-                🚪 &nbsp; Sair
+                <img class="icons-meuPainel-logout"src="../../assets/img/icon/logout.png"> Sair
             </button>
         </aside>
 
