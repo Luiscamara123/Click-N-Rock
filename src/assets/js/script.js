@@ -458,7 +458,7 @@ function renderPagina(pagina) {
                     </div>
                     <div>
                         <h2 class="profile-name" id="profileName">${usuario.nome}</h2>
-                        <p class="profile-description">Cliente da Rock Store</p>
+                        <p class="profile-description">Cliente da Click N Rock</p>
                     </div>
                 </div>
 
