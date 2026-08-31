@@ -35,6 +35,7 @@
           </li>
           <li class="nav-item"><a class="nav-link" href="#contato"> Ajuda </a></li>
           <li class="nav-item"><a class="nav-link" href="#contato"> Contato </a></li>
+          <li class="nav-item"><a class="nav-link" href="../../meu-painel/meu-painel.php"> Meu painel </a></li>
         </ul>
       </div>
       <div class="dropdown">

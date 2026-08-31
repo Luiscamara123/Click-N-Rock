@@ -72,6 +72,7 @@ header{
 }
 
 div#navbarNav {
+    font-weight: bold;
     flex-grow: unset;
 }
 
@@ -235,12 +236,12 @@ input#pesquisa{
     display: block;
 }
 .nav-link{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     font-weight: bold;
     font-family: "Andika", sans-serif;
 }
 .nav-link:hover{
-    color:  rgb(243, 13, 1);
+    color:  rgb(243, 13, 1) !important;
     border-bottom: 2px solid;
 }
 a.nav-link.active{
@@ -452,7 +453,6 @@ footer{
     margin: 5px !important;
     background-color: white !important;
     border-radius: 15px !important;
-    border: 2px solid black !important;
 }
 
 .dark .carousel-control-next, .dark  .carousel-control-prev {
@@ -555,6 +555,7 @@ img.add-btn {
 }
 
 .cart {
+    margin-right: 40px;
     position: relative;
     cursor: pointer;
 }
@@ -1780,7 +1781,6 @@ input {
     text-align: center;
     font-size: 20px;
     font-weight: 900;
-    margin-bottom: 40px;
     color: #000000;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1812,7 +1812,6 @@ input {
 #meu-painel .menu button.active {
     background-color:  rgb(206, 13, 2);
     color: white;
-    border-color: #000000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     transition: 0.4s;
 }
@@ -1831,7 +1830,6 @@ input {
 #meu-painel .logout {
     width: 100%;
     padding: 13px;
-    border: 2px solid #000000;
     border-radius: 12px;
     background: #ffffff;
     color: #000;
@@ -1862,6 +1860,9 @@ input {
 
 #meu-painel nav.navbar.navbar-expand-lg.navbar-dark.px-3 {
     position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #meu-painel .header {
@@ -1890,7 +1891,6 @@ input {
     background: #ffffff;
     padding: 8px 16px 8px 8px;
     border-radius: 30px;
-    border: 2px solid #000000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -1904,7 +1904,6 @@ input {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    border: 1.5px solid #000000;
 }
 
 #meu-painel .user-name {
@@ -1928,10 +1927,10 @@ input {
 #meu-painel .panel{
     padding: 24px;
     background: #ffffff;
-    border: 2px solid #000000;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     height: auto !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 #meu-painel .cards {
@@ -1945,10 +1944,9 @@ input {
 }
 
 #meu-painel .card{
-    width: 500px !important;
+    width: 745px !important;
     padding: 24px;
     background: #ffffff !important;
-    border: 2px solid #000000;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     height: auto !important;
@@ -1976,7 +1974,7 @@ input {
 #meu-painel .card-number {
     font-size: 32px;
     font-weight: 900;
-    color: #000;
+    color: #a80000;
     height: 80px;
 }
 
@@ -1999,7 +1997,7 @@ input {
 #meu-painel .panel-header h2 {
     font-size: 20px;
     font-weight: 800;
-    color: #000;
+    color: #a80000;
 }
 
 #meu-painel .panel-header span {
@@ -2093,7 +2091,6 @@ input {
     justify-content: center;
     font-size: 26px;
     font-weight: bold;
-    border: 2px solid #000000;
     flex-shrink: 0;
 }
 
@@ -2125,13 +2122,13 @@ input {
 #meu-painel .form-group input {
     width: 100%;
     padding: 12px 14px;
-    border: 2px solid #ccc;
     border-radius: 10px;
     outline: none;
-    background: #fdfdfd;
+    background: #e1e1e15e;
     color: #000;
     font-size: 14px;
     transition: border-color 0.2s;
+    BORDER: none;
 }
 
 #meu-painel .form-group input:focus {
@@ -2143,7 +2140,6 @@ input {
 #meu-painel .return-button {
     text-decoration: none;
     padding: 12px 24px;
-    border: 2px solid #000000;
     border-radius: 10px;
     background: #2e7d32;
     color: white;
@@ -2185,7 +2181,6 @@ input {
 #meu-painel .logout-box {
     width: 380px;
     padding: 40px;
-    border: 2px solid #000000;
     border-radius: 16px;
     background: #ffffff;
     text-align: center;
@@ -2230,7 +2225,8 @@ input {
 ===================================================== */
 
 #meu-painel #pageTitle{
-    color: black;
+    color: #ce0d02;
+    font-family: 'Inter', sans-serif;
 }
 .dark#meu-painel #pageTitle{
     color: white;
