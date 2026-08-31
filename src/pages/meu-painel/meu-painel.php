@@ -104,9 +104,7 @@
             <div class="logout-icon">✓</div>
             <h2>Você saiu da conta</h2>
             <p>Sua sessão foi encerrada com sucesso.</p>
-            <button class="return-button" id="returnButton">
-                Voltar para minha conta
-            </button>
+            <a class="return-button" id="returnButton" href="../../../index.php"> Voltar para o Início </a>
         </div>
     </div>
 

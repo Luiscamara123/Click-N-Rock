@@ -27,9 +27,8 @@ body{
 
 /*(modo escuro do corpo do site)*/
 body.dark{
-    background-image: linear-gradient(#7f7f7f, rgba(0, 0, 0, 0.767), rgb(49 48 48));
+    background-image: linear-gradient(#494747, rgba(0, 0, 0, 0.767), rgb(49 48 48));
 }
-
 /*------------------------------------------FIM Corpo do site ------------------------------------------*/
 
 /*------------------------------------------------ Titulos e subtitulos --------------------------------------------*/
@@ -101,6 +100,7 @@ div#navbarNav {
 
 /*(Modo escuro do navbar)*/
 .dark .navbar, .navbar{
+    height: 90px;
     top: 0;
     width: 100%;
     z-index: 9;
@@ -113,6 +113,7 @@ div#navbarNav {
 
 /*(Modo escuro do navbar e do navbar-produtos)*/
 .dark .navbar-produtos, .navbar{
+    height: 90px;
     top: 0;
     width: 100%;
     z-index: 9;
@@ -880,7 +881,7 @@ span.star-divider:after{
 
 /*(modo escuro do paginaCadastro)*/
 #paginaCadastro.dark{
-    background-image: linear-gradient(black, rgba(0, 0, 0, 0.767), rgb(29, 29, 29));
+    background-image: linear-gradient(#494747, rgba(0, 0, 0, 0.767), rgb(49 48 48));
 }
 
 #paginaCadastro .container-custom{
@@ -1023,8 +1024,7 @@ span.star-divider:after{
     color: white !important;
 }
 #paginaLogin.dark{
-    background-image: linear-gradient(black, rgba(0, 0, 0, 0.767), rgb(29, 29, 29));
-    background-attachment: fixed;
+    background-image: linear-gradient(#494747, rgba(0, 0, 0, 0.767), rgb(49 48 48));
 }
 #paginaLogin .container-custom{
    max-width: 430px;
@@ -1090,7 +1090,7 @@ span.star-divider:after{
 }
 
 #paginaLogin.dark .form a{
-    color: #81a7ff;
+    color: #30a6e1;
 }
 
 #paginaLogin .form a:hover{
@@ -1763,7 +1763,7 @@ input {
    MENU LATERAL
 ===================================================== */
 #meu-painel .sidebar {
-    margin-top: 130px;
+    margin-top: 90px;
     width: 300px;
     padding: 25px 15px;
     background: #dddddd;
@@ -1809,19 +1809,21 @@ input {
     cursor: pointer;
     transition: all 0.2s ease;
 }
-
-#meu-painel .menu button:hover {
-    background: #f0f0f0;
-    border-color: #0000008f;
-    color: #000;
-}
-
 #meu-painel .menu button.active {
     background-color:  rgb(206, 13, 2);
     color: white;
     border-color: #000000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
 }
+
+#meu-painel .menu button:hover {
+    background: #f0f0f0;
+    border-color: #0000008f;
+    color: #000;
+    background-color: rgba(212, 212, 212, 0.24);;
+}
+
 
 /* =====================================================
    SAIR
@@ -1849,7 +1851,7 @@ input {
    CONTEÚDO PRINCIPAL
 ===================================================== */
 #meu-painel .main {
-    margin-top: 120px;
+    margin-top: 80px;
     width: calc(100% - 300px);
     margin-left: auto;
     padding: 35px;
@@ -2139,6 +2141,7 @@ input {
 
 #meu-painel .save-button,
 #meu-painel .return-button {
+    text-decoration: none;
     padding: 12px 24px;
     border: 2px solid #000000;
     border-radius: 10px;
