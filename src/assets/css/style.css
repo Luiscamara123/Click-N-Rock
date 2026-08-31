@@ -265,7 +265,7 @@ a.nav-link.active:hover{
     font-family: "Andika", sans-serif;
 }
 .dark .nav-link:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #f30d01;
 }
 .dark a.nav-link.active{
     font-size: 17px;
