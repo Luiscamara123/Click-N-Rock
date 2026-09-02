@@ -40,7 +40,7 @@
     <div class="container-custom">        
         <div class="registration form">
             <header class="login_tittle">Cadastrar-se</header>
-            <form action="GET">
+            <form action="../../assets/php/cadastro.php" method="POST">
                 <input name="nomeCompleto" type="text" placeholder="Insira seu nome completo">
                 <input name="nascimento" type="date" placeholder="Digite sua data de nascimento">
                 <label for="genero" class="genero">Gênero</label>
@@ -54,7 +54,7 @@
                 <input name="email" type="email" placeholder="Insira seu email">
                 <input name="senha" type="password" placeholder="Crie uma senha">
                 <input name="confirmaSenha" type="password" placeholder="Confirme sua senha">
-                <input type="button" class="button" value="Cadastrar-se">
+                <input type="submit" class="button" value="Cadastrar-se">
             </form>
             <div class="signup">
                 <span class="signup">Já tem uma conta?

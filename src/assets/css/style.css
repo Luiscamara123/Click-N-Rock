@@ -1244,6 +1244,9 @@ span.star-divider:after{
   color: #960000;
   margin: 10px 0;
 }
+.dark#paginaProduto .price {
+  color: #cb0000;
+}
 
 #paginaProduto .rating {
   color: #50bb55;

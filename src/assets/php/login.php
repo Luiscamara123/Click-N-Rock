@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $senha = $_POST['senha'];
 
     // Busca o usuário pelo e-mail
-    $sql = "SELECT id_usuario, nome, senha_segura, tipo_usuario FROM usuarios WHERE email = ?";
+    $sql = "SELECT id_usuario, nome_completo, senha_segura FROM usuarios WHERE email = ?";
     $stmt = $conexao->prepare($sql);
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -15,12 +15,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($usuario = $resultado->fetch_assoc()) {
         // Valida a senha do usuário existente
-        if (password_verity($senha, $usuario['senha_segura'])) {
+        if (password_verify($senha, $usuario['senha_segura'])) {
             $_SESSION['id_usuario']   = $usuario['id_usuario'];
-            $_SESSION['nome_usuario'] = $usuario['nome'];
+            $_SESSION['nome_usuario'] = $usuario['nome_completo'];
             $_SESSION['tipo_usuario'] = $usuario['tipo_usuario'];
 
-            header("Location: ../../index.php");
+            header("Location: ../../../index.php");
             exit();
         } else {
             // Usuário existe, porém a senha está errada

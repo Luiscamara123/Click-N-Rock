@@ -40,11 +40,11 @@
         <input type="checkbox" id="check">
         <div class="login form">
             <header class="login_tittle">Login</header>
-            <form action="#">
-                <input type="email" placeholder="Insira seu email">
-                <input type="password" placeholder="Insira sua senha">
+            <form action="../../assets/php/login.php" method="POST">
+                <input name="email" type="email" placeholder="Insira seu email">
+                <input name="senha" type="password" placeholder="Insira sua senha">
                 <a href="#">Esqueceu sua senha?</a>
-                <input type="button" class="button" value="Entrar">
+                <input type="submit" class="button" value="Entrar">
             </form>
             <div class="signup">
                 <span class="signup">Não tem uma conta?
