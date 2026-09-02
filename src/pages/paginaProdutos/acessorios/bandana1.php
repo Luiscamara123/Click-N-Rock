@@ -71,14 +71,6 @@
           <p class="product-description">
             Bandana Estampada Preto Lenço Rock Máscara.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Preto</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

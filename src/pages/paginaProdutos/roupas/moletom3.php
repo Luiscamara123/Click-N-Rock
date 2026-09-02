@@ -71,14 +71,6 @@
           <p class="product-description">
             Blusão em moletom com felpa e estampa da banda Slipknot. Possui capuz, modelagem regular e mangas longas, ideal para compor produções casuais. Peça confortável e versátil, confeccionado em algodão de certificado BCI.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Preto</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

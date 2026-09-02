@@ -71,14 +71,6 @@
           <p class="product-description">
             Cinto cravejado de liga: Nosso cinto cravejado de liga é decorado com rebites prateados, o estilo punk adicionará um toque de frescor à sua roupa, é adequado tanto para uso diário quanto para ir a festas.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Preto</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

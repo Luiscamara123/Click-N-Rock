@@ -71,14 +71,6 @@
           <p class="product-description">
            Caneca Personalizada Banda Metallica – Para quem vive no ritmo do rock! Perfeita para fãs de uma das maiores bandas de todos os tempos, a caneca do Metallica traz atitude, estilo e personalidade em cada detalhe. Com estampa impactante e cheia de energia, ela é a companhia ideal para os amantes do bom e velho rock'n'roll.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Preto e Branco</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

@@ -71,14 +71,6 @@
           <p class="product-description">
             Colar Pulseira Spike Cone Metal Punk Rock. Pulseiras confeccionada em material sintético preto, detalhes com 14 spikes médio cromado presos por rebites. Regulagem por botão de pressão.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Preto</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

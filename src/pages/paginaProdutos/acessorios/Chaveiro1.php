@@ -71,14 +71,6 @@
           <p class="product-description">
              Este chaveiro de banda de rock é uma ótima ideia de presente para quem gosta de rock, seja guitarrista, baixista, cantor, baterista ou simplesmente um fã do gênero. É um presente atencioso e prático para amantes da música que certamente será apreciado por homens e mulheres de todas as idades, o melhor presente de baixista e guitarrista para homens e meninos.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Prata</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

@@ -71,14 +71,6 @@
           <p class="product-description">
             Estilo Autêntico e Impactante Destaque-se com um acessório que traduz atitude e personalidade. A pulseira com 3 fileiras de spikes prateados e design piramidal é perfeita para quem vive intensamente a estética punk, rock ou gótica. Ela não é só um acessório – é uma extensão da sua identidade.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Preto</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

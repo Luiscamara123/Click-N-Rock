@@ -71,14 +71,6 @@
           <p class="product-description">
            Jaqueta Jeans Oversize tem modelagem mais ampla, bem larga, folgada e mais comprida, com bolsos frontais, laterais e internos, cabe muita coisa. Por ser unissex confira as tabelas de medidas antes da compra.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Preto</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

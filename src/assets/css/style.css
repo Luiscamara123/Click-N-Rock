@@ -118,7 +118,7 @@ div#navbarNav {
 
 /*(Modo escuro do navbar e do navbar-produtos)*/
 .dark .navbar-produtos, .navbar{
-    height: 140px;
+    height: auto !important;
     top: 0;
     width: 100%;
     z-index: 9;
@@ -1179,29 +1179,32 @@ span.star-divider:after{
 
 /* Container Principal */
 #paginaProduto .container {
-  max-width: 1200px;
-  margin: 90px auto;
-  padding: 20px;
+    max-width: 1200px;
+    margin: 90px auto;
+    padding: 20px;
 }
 
 /* Detalhes do Produto */
 #paginaProduto .product-details {
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 40px;
 }
 
 #paginaProduto .product-gallery {
-  flex: 1;
+    flex: 1;
 }
 
 #paginaProduto .product-gallery img {
-  width: 100%;
-  border-radius: 10px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* Informações do Produto */
 #paginaProduto .product-info {
-  flex: 1;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
 }
 
 #paginaProduto .product-path {
@@ -2354,7 +2357,7 @@ span.card-icon{
 ===================================================== */
 @media (max-width: 700px) {
     #meu-painel .sidebar {
-        margin-top: 140px;
+        margin-top: 138px;
         width: 70px;
         padding: 20px 8px;
     }

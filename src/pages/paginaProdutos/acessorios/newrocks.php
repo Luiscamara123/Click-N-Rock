@@ -70,14 +70,6 @@
           <p class="product-description">
             Apresentando pontas impressionantes e um elegante acabamento em couro preto, essas botins são uma declaração de moda poderosa, perfeita para pessoas avançadas que buscam expressar sua individualidade.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Preto</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

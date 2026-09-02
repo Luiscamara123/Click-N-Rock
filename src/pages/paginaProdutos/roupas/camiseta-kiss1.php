@@ -71,14 +71,6 @@
           <p class="product-description">
           Nossas camisetas são confeccionadas com malha de alta qualidade em vários padrões de cores e lavagens. As estampas são desenvolvidas por uma equipe de designers gráficos que transformam imagens, desenhos e artes em silk screen de excelente qualidade.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Preto</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

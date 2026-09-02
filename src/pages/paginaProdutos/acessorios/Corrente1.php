@@ -70,14 +70,6 @@
           <p class="product-description">
             Corrente de aço inoxidável resistente: feita de aço inoxidável premium resistente ao desbotamento, esta corrente carteira masculina é um acessório de metal resistente construído para uso diário. Sua estrutura sólida resiste à ferrugem e manchas, garantindo que esta corrente de motociclista mantenha seu estilo punk afiado dia após dia
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Prata</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

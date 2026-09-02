@@ -71,14 +71,6 @@
           <p class="product-description">
             Esses brincos são a peça de moda perfeita para você. Seja para ir à praia ou a uma festa, esses brincos são o seu acessório indispensável. Esses brincos são perfeitos para festas, raves, encontros, aniversários, Natal, Dia dos Namorados, Ano Novo e outras ocasiões.
           </p>
-          <div class="product-options">
-            <label for="color">Cor:</label>
-            <select id="color">
-              <option>Prata</option>
-            </select>
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" value="1" />
-          </div>
           <div class="buttons">
             <a class="add-btn">
             Comprar

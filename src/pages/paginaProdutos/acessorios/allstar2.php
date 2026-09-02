@@ -78,8 +78,6 @@
             <a class="btn-cor btn-cor-vermelho" href="allstar2.php">Vermelho</a>
             <a class="btn-cor btn-cor-branco" href="allstar3.php">Branco</a>
           </div>
-          <label for="quantity">Quantidade:</label>
-          <input type="number" id="quantity" value="1" />
         </div>
         <div class="buttons">
           <a class="add-btn">
