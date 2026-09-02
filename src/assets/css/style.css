@@ -1994,7 +1994,7 @@ span.card-icon{
     height: auto !important;
 }
 .dark#meu-painel .card{
-    background: #393939 !important
+    background: #393939 !important;
 }
 
 #meu-painel .card-top {
@@ -2354,6 +2354,7 @@ span.card-icon{
 ===================================================== */
 @media (max-width: 700px) {
     #meu-painel .sidebar {
+        margin-top: 140px;
         width: 70px;
         padding: 20px 8px;
     }
@@ -2376,11 +2377,13 @@ span.card-icon{
     }
 
     #meu-painel .main {
+        margin-top: 140px;
         width: calc(100% - 70px);
-        margin-left: 70px;
         padding: 20px;
     }
-
+    #meu-painel .card {
+        width: 300px !important;
+    }
     #meu-painel .cards {
         grid-template-columns: 1fr;
     }
@@ -2391,6 +2394,9 @@ span.card-icon{
 
     #meu-painel .user-area {
         display: none;
+    }
+    #meu-painel img.icons-meuPainel{
+        margin: 0;
     }
 }
 /*/////////////////////////////////////////////////////////////////////////////////////////*/
