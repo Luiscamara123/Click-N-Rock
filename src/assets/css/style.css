@@ -980,12 +980,12 @@ span.star-divider:after{
     letter-spacing: 1px;
     margin-top: 1.7rem;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.6s;
     border: none;
 }
 
 #paginaCadastro .form input.button:hover{
-    background: 006653;
+    opacity: 0.8;
 }
 
 #paginaCadastro .signup{
@@ -1109,11 +1109,11 @@ span.star-divider:after{
     letter-spacing: 1px;
     margin-top: 1.7rem;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.6s;
     border: none;
 }
 #paginaLogin .form input.button:hover{
-    background: 006653;
+    opacity: 0.8;
 }
 #paginaLogin.signup{
     font-size: 17px;
@@ -1969,6 +1969,9 @@ span.card-icon{
     height: auto !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
+.dark#meu-painel .panel{
+    background: #393939;
+}
 
 #meu-painel .cards {
     display: grid;
@@ -1988,6 +1991,9 @@ span.card-icon{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     height: auto !important;
 }
+.dark#meu-painel .card{
+    background: #393939 !important
+}
 
 #meu-painel .card-top {
     display: flex;
@@ -2003,6 +2009,9 @@ span.card-icon{
     font-weight: bold;
     text-transform: uppercase;
 }
+.dark#meu-painel .card-title {
+    color: #ffffff;
+}
 
 #meu-painel .card-icon {
     font-size: 22px;
@@ -2014,12 +2023,18 @@ span.card-icon{
     color: #a80000;
     height: 80px;
 }
+.dark#meu-painel .card-number {
+    color: #d72c2c;
+}
 
 #meu-painel .card-description {
     margin-top: 6px;
     color: #666;
     font-size: 12px;
     height: 30px;
+}
+.dark#meu-painel .card-description {
+    color: #b7b7b7;
 }
 
 #meu-painel .panel-header {
@@ -2036,11 +2051,17 @@ span.card-icon{
     font-weight: 800;
     color: #a80000;
 }
+.dark#meu-painel .panel-header h2 {
+    color: #d72c2c;
+}
 
 #meu-painel .panel-header span {
     color: #666;
     font-size: 12px;
     font-weight: bold;
+}
+.dark#meu-painel .panel-header span {
+    color: #ffffff;
 }
 
 #meu-painel img.img-logo {
@@ -2083,11 +2104,17 @@ span.card-icon{
     font-weight: bold;
     color: #000;
 }
+.dark#meu-painel .order-name {
+    color: #ffffff;
+}
 
 #meu-painel .order-number {
     margin-top: 4px;
     color: #666;
     font-size: 13px;
+}
+.dark#meu-painel .order-number {
+    color: #b7b7b7;
 }
 
 #meu-painel .status {
@@ -2097,7 +2124,6 @@ span.card-icon{
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
-    border: 1px solid #000000;
 }
 
 /* =====================================================
@@ -2135,11 +2161,17 @@ span.card-icon{
     font-weight: 800;
     color: #000;
 }
+.dark#meu-painel .profile-name {
+    color: #ffffff;
+}
 
 #meu-painel .profile-description {
     margin-top: 4px;
-    color: #666;
+    color: #878787;
     font-size: 13px;
+}
+.dark#meu-painel .profile-description {
+    color: #a3a3a3;
 }
 
 #meu-painel .form-group {
@@ -2154,6 +2186,9 @@ span.card-icon{
     font-weight: bold;
     text-transform: uppercase;
 }
+.dark#meu-painel .form-group label {
+    color: #ffffff;
+}
 
 #meu-painel .form-group input {
     width: 100%;
@@ -2164,7 +2199,10 @@ span.card-icon{
     color: #000;
     font-size: 14px;
     transition: border-color 0.2s;
-    BORDER: none;
+    border: none;
+}
+.dark#meu-painel .form-group input {
+    background: #ffffffde;
 }
 
 #meu-painel .form-group input:focus {
@@ -2213,7 +2251,9 @@ span.card-icon{
     justify-content: center;
     background: linear-gradient(180deg, #e2e2e2 0%, #b8b8b8 100%);
 }
-
+.dark#meu-painel .logout-screen {
+    background-image: linear-gradient(#494747, rgba(0, 0, 0, 0.767), #1a1a1a);
+}
 #meu-painel .logout-box {
     width: 380px;
     padding: 40px;
@@ -2221,6 +2261,9 @@ span.card-icon{
     background: #ffffff;
     text-align: center;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.dark#meu-painel .logout-box {
+    background: #393939;
 }
 
 #meu-painel .logout-icon {
@@ -2230,12 +2273,16 @@ span.card-icon{
     border-radius: 50%;
     background: #e8f5e9;
     color: #2e7d32;
-    border: 2px solid #2e7d32;
+    border: 3px solid #2e7d32;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 28px;
     font-weight: bold;
+}
+.dark#meu-painel .logout-icon {
+    background: #d2ffd6cc;
+    border: 3px solid #2e7d32;
 }
 
 #meu-painel .logout-box h2 {
@@ -2243,11 +2290,17 @@ span.card-icon{
     color: #000;
     font-weight: 800;
 }
+.dark#meu-painel .logout-box h2 {
+    color: #ffffff;
+}
 
 #meu-painel .logout-box p {
     margin-bottom: 25px;
     color: #666;
     font-size: 13px;
+}
+.dark#meu-painel .logout-box p {
+    color: #b7b7b7;
 }
 
 #meu-painel .return-button {
@@ -2268,7 +2321,7 @@ span.card-icon{
     color: white;
 }
 .dark#meu-painel .header p {
-    color: #959595;
+    color: #b7b7b7;
     font-size: 14px;
 }
 .dark#meu-painel .menu button {
