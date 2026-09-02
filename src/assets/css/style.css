@@ -1007,7 +1007,8 @@ span.star-divider:after{
 }
 @media screen and (max-width: 768px) {
     #paginaCadastro .container-custom{
-        margin-top: 150px;
+        margin-top: 160px;
+        width: 350px;
     }
 }
 
@@ -1131,7 +1132,8 @@ span.star-divider:after{
 }
 @media screen and (max-width: 768px) {
     #paginaLogin .container-custom{
-        margin-top: 150px;
+        width: 350px;
+        margin-top: 160px;
     }
 }
 
