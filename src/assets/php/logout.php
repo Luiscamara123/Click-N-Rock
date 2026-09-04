@@ -4,6 +4,6 @@
     # Destrói a sessão
     session_destroy();
     # Redireciona para a página de login
-    header("Location: ../pages/login/index.php");
+    header("Location: ../../pages/login/index.php");
     exit();
 ?>
