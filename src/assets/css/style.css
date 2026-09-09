@@ -159,6 +159,558 @@ input#pesquisa{
     padding-left: 45px; 
 }
 
+/* =========================================================
+   SISTEMA DE BUSCA
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   CAMPO DE PESQUISA
+   --------------------------------------------------------- */
+
+.campo-pesquisa {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 350px;
+    max-width: 100%;
+
+    margin: 0 20px;
+}
+
+
+/* Input */
+
+.campo-pesquisa input#pesquisa {
+
+    width: 100%;
+    height: 42px;
+
+    padding: 0 50px 0 18px;
+
+    border: 1px solid #555;
+    border-radius: 25px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background-color: #ffffff;
+    color: #111;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Foco */
+
+.campo-pesquisa input#pesquisa:focus {
+
+    border-color: #e00000;
+
+    box-shadow:
+        0 0 0 3px rgba(224, 0, 0, 0.15);
+}
+
+
+/* Botão */
+
+#botaoPesquisa {
+
+    position: absolute;
+
+    right: 5px;
+
+    width: 34px;
+    height: 34px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #e00000;
+
+    color: white;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease;
+}
+
+
+#botaoPesquisa:hover {
+
+    transform: scale(1.08);
+
+    background-color: #b00000;
+}
+
+
+/* ---------------------------------------------------------
+   SUGESTÕES
+   --------------------------------------------------------- */
+
+.sugestoes-pesquisa {
+
+    position: absolute;
+
+    top: calc(100% + 8px);
+
+    left: 0;
+    right: 0;
+
+    z-index: 9999;
+
+    display: none;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Cada sugestão */
+
+.sugestao-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 15px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    color: #111;
+
+    border-bottom: 1px solid #eeeeee;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.sugestao-item:last-child {
+    border-bottom: none;
+}
+
+
+.sugestao-item:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* Imagem da sugestão */
+
+.sugestao-item img {
+
+    width: 50px;
+    height: 50px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+}
+
+
+/* Nome */
+
+.sugestao-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.sugestao-nome {
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.sugestao-preco {
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+/* ---------------------------------------------------------
+   RESULTADOS
+   --------------------------------------------------------- */
+
+.resultado-pesquisa {
+    display: none;
+    width: 100%;
+    padding: 50px 0;
+}
+
+
+/* Título */
+
+.titulo-resultado {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.titulo-resultado h2 {
+
+    margin: 0;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+
+#quantidadeResultados {
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* ---------------------------------------------------------
+   GRID DOS RESULTADOS
+   --------------------------------------------------------- */
+
+.lista-resultados {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* ---------------------------------------------------------
+   CARD DO RESULTADO
+   --------------------------------------------------------- */
+
+.resultado-card {
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.resultado-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Link */
+
+.resultado-card a {
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+/* Imagem */
+
+.resultado-imagem {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    background-color: #f5f5f5;
+}
+
+
+.resultado-imagem img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+
+.resultado-card:hover
+.resultado-imagem img {
+
+    transform: scale(1.05);
+}
+
+
+/* Informações */
+
+.resultado-info {
+
+    padding: 15px;
+}
+
+
+.resultado-info h3 {
+
+    margin: 0 0 8px;
+
+    font-size: 17px;
+
+    line-height: 1.3;
+}
+
+
+.resultado-preco {
+
+    margin: 0 0 15px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* Botão comprar */
+
+.resultado-comprar {
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    text-align: center;
+
+    font-weight: 600;
+
+    color: white;
+
+    background-color: rgb(37, 129, 1);
+
+    transition: background-color 0.6s ease;
+}
+
+
+.resultado-comprar:hover {
+
+    opacity: 0.7;
+}
+
+
+/* ---------------------------------------------------------
+   NENHUM RESULTADO
+   --------------------------------------------------------- */
+
+.nenhum-resultado {
+
+    display: none;
+
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+
+.nenhum-resultado i {
+
+    margin-bottom: 15px;
+
+    font-size: 45px;
+
+    opacity: 0.5;
+}
+
+
+.nenhum-resultado h3 {
+
+    margin-bottom: 8px;
+}
+
+
+.nenhum-resultado p {
+
+    margin: 0;
+
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   MODO ESCURO
+   ========================================================= */
+
+.dark .campo-pesquisa input#pesquisa {
+
+    background-color: #1f1f1f;
+
+    color: #ffffff;
+
+    border-color: #444;
+}
+
+
+.dark .sugestoes-pesquisa {
+
+    background-color: #202020;
+
+    color: #ffffff;
+}
+
+
+.dark .sugestao-item {
+
+    color: #ffffff;
+
+    border-color: #333;
+}
+
+
+.dark .sugestao-item:hover {
+
+    background-color: #303030;
+}
+
+
+.dark .resultado-pesquisa {
+
+    background-color: #121212;
+
+    color: #ffffff;
+}
+
+
+.dark .resultado-card {
+
+    background-color: #1e1e1e;
+
+    border-color: #333;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .lista-resultados {
+
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+
+    }
+
+}
+
+
+@media (max-width: 992px) {
+
+    .campo-pesquisa {
+
+        width: 280px;
+
+        margin: 10px auto;
+    }
+
+
+    .lista-resultados {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .campo-pesquisa {
+
+        width: 100%;
+
+        margin: 10px 0;
+    }
+
+
+    .lista-resultados {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 15px;
+    }
+
+
+    .titulo-resultado {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .lista-resultados {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
 /*------------------------------------------------------ FIM Cabecalho index ----------------------------------------------------*/
 
 .produtos-carrosel{
@@ -204,7 +756,7 @@ input#pesquisa{
 
 /* Links inside dropdown content */
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;

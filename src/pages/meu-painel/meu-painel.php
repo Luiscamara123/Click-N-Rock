@@ -1,3 +1,11 @@
+<?php
+// 1. Inicia a sessão e protege a página (só entra se estiver logado)
+session_start();
+if (!isset($_SESSION['id_usuario'])) {
+    header("Location: ../login/index.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -6,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Store - Minha Conta</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
-     <link rel="stylesheet" href="../../assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -59,22 +67,23 @@
         <aside class="sidebar">
             <nav class="menu">
                 <button class="active" data-page="inicio">
-                    <img class="icons-meuPainel"src="../../assets/img/icon/home.png"> Início
+                    <img class="icons-meuPainel" src="../../assets/img/icon/home.png"> Início
                 </button>
                 <button data-page="pedidos">
-                    <img class="icons-meuPainel"src="../../assets/img/icon/box.png"> Meus pedidos
+                    <img class="icons-meuPainel" src="../../assets/img/icon/box.png"> Meus pedidos
                 </button>
                 <button data-page="perfil">
-                    <img class="icons-meuPainel"src="../../assets/img/icon/user.png"> Meu perfil
+                    <img class="icons-meuPainel" src="../../assets/img/icon/user.png"> Meu perfil
                 </button>
                 <button data-page="configuracoes">
-                    <img class="icons-meuPainel"src="../../assets/img/icon/setting.png"> Configurações
+                    <img class="icons-meuPainel" src="../../assets/img/icon/setting.png"> Configurações
                 </button>
             </nav>
 
-            <button class="logout" id="logoutButton">
-                <img class="icons-meuPainel-logout"src="../../assets/img/icon/logout.png"> Sair
-            </button>
+            <!-- Alterado o link do botão de sair para chamar o arquivo logout.php -->
+            <a href="../../assets/php/logout.php" class="logout" id="logoutButton" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">
+                <img class="icons-meuPainel-logout" src="../../assets/img/icon/logout.png"> Sair
+            </a>
         </aside>
 
         <!-- CONTEÚDO -->
@@ -89,7 +98,7 @@
                     <div class="avatar" id="headerAvatar"></div>
                     <div>
                         <div class="user-name" id="headerUserName"></div>
-                        <span class="user-type">Cliente</span>
+                        <span class="user-type"><?php echo htmlspecialchars($_SESSION['tipo_usuario'] ?? 'Cliente'); ?></span>
                     </div>
                 </div>
             </header>
@@ -98,7 +107,7 @@
         </main>
     </div>
 
-    <!-- TELA DEPOIS DE SAIR -->
+    <!-- TELA DEPOIS DE SAIR (Caso queira usar via JS, mantida do original) -->
     <div class="logout-screen" id="logoutScreen">
         <div class="logout-box">
             <div class="logout-icon">✓</div>
@@ -159,12 +168,10 @@
         </li>
         <li><a href="#" class="footer-link">FAQ</a></li>
         <li><a href="#" class="footer-link">Troca e devoluções</a></li>
-        <a href="#" class="footer-link">Entre em contato</a>
-        </li>
+        <li><a href="#" class="footer-link">Entre em contato</a></li>
         <li>
           <a href="#" class="footer-link">Termos e condições</a>
         </li>
-        <li>
         <li>
           <a href="#" class="footer-link">Política de privacidade</a>
         </li>
@@ -188,8 +195,16 @@
     </div>
   </footer>
 
+    <!-- 2. INJEÇÃO DOS DADOS DO PHP PARA O JAVASCRIPT -->
+    <script>
+        const usuarioLogado = {
+            nome: "<?php echo htmlspecialchars($_SESSION['nome_usuario'] ?? 'Visitante'); ?>",
+            email: "<?php echo htmlspecialchars($_SESSION['email_usuario'] ?? 'email@naoinformado.com'); ?>"
+        };
+    </script>
+
     <script src="../../assets/js/script.js"></script>
-  <script src="../../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

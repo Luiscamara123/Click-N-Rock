@@ -86,6 +86,51 @@ $tipos_rotulo = [
         </buton>
       </div>
     </section>
+    <!-- ============================= -->
+<!-- ÁREA DE RESULTADOS DA BUSCA -->
+<!-- ============================= -->
+
+<section id="resultadoPesquisa" class="resultado-pesquisa">
+
+    <div class="container">
+
+        <div class="titulo-resultado">
+
+            <h2>
+                Resultados da busca
+            </h2>
+
+            <span id="quantidadeResultados">
+                0 produtos encontrados
+            </span>
+
+        </div>
+
+        <div 
+            id="listaResultados" 
+            class="lista-resultados"
+        ></div>
+
+        <div 
+            id="nenhumResultado" 
+            class="nenhum-resultado"
+        >
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <h3>
+                Nenhum produto encontrado
+            </h3>
+
+            <p>
+                Tente pesquisar por outro nome ou produto.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
     <!--Modo Escuro-->
     <button id="modoEscuro">🌙</button>
     <section>

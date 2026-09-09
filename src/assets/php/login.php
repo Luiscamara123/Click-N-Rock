@@ -19,6 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['id_usuario']   = $usuario['id_usuario'];
             $_SESSION['nome_usuario'] = $usuario['nome_completo'];
             $_SESSION['tipo_usuario'] = $usuario['tipo_usuario'];
+            $_SESSION['email_usuario'] = $email; // <-- Adicione essa linha se já puxou o email do banco
 
             header("Location: ../../../index.php");
             exit();
