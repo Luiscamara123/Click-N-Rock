@@ -57,7 +57,7 @@ $tipos_rotulo = [
 
 <body>
   <!--Cabeçalho-->
-<?php include('./src/assets/php/header.php'); ?>  
+  <?php include('./src/assets/php/header.php'); ?>
   <!--Carrosel-Banner-->
   <main>
     <section>

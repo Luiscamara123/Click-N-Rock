@@ -3,7 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
   session_start();
 }
 
-include("conexao.php");
+include("src/assets/php/conexao.php");
 
 if (!isset($_SESSION['id_usuario'])) {
     header("Location: login.php");
@@ -43,7 +43,7 @@ $tipos_rotulo = [
 ?>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark px-3">
-      <a href="index.php"><img class="logo" src="../src/assets/img/icon/Logo.png"></a>
+      <a href="index.php"><img class="logo" src="./src/assets/img/icon/Logo.png"></a>
       <input type="text" id="pesquisa" placeholder="Digite o produto">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"> </span>
