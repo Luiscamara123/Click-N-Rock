@@ -37,9 +37,6 @@
         </ul>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">
-          <img width="40px" src="../../assets/img/icon/icon-usuario.png">
-        </button>
         <div class="dropdown-content">
           <a href="../login/index.php">Login</a>
           <a href="../cadastrar/index.php">Cadastrar</a>
